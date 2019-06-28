@@ -83,6 +83,7 @@
 		32A186EA22C615640056F549 = {
 			isa = PBXGroup;
 			children = (
+				838D5A7F22C61736005661B3 /* Model */,
 				32A186F522C615640056F549 /* SocialMood */,
 				32A1870C22C615640056F549 /* SocialMoodTests */,
 				32A1871722C615640056F549 /* SocialMoodUITests */,
@@ -103,7 +104,6 @@
 		32A186F522C615640056F549 /* SocialMood */ = {
 			isa = PBXGroup;
 			children = (
-				838D5A7F22C61736005661B3 /* Model */,
 				32A186F622C615640056F549 /* AppDelegate.swift */,
 				32A186F822C615640056F549 /* FirstViewController.swift */,
 				32A186FA22C615640056F549 /* SecondViewController.swift */,
@@ -453,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MP48V474YF;
 				INFOPLIST_FILE = SocialMood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MP48V474YF;
 				INFOPLIST_FILE = SocialMood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
