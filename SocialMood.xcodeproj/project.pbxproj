@@ -11,8 +11,6 @@
 		32A186FE22C615640056F549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A186FC22C615640056F549 /* Main.storyboard */; };
 		32A1870022C615640056F549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A186FF22C615640056F549 /* Assets.xcassets */; };
 		32A1870322C615640056F549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A1870122C615640056F549 /* LaunchScreen.storyboard */; };
-		32A1870E22C615640056F549 /* SocialMoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A1870D22C615640056F549 /* SocialMoodTests.swift */; };
-		32A1871922C615640056F549 /* SocialMoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A1871822C615640056F549 /* SocialMoodUITests.swift */; };
 		7EB5BF1522C6437C00326C56 /* EmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB5BF1422C6437C00326C56 /* EmojiViewController.swift */; };
 		838D5A8122C6175E005661B3 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8022C6175E005661B3 /* Mood.swift */; };
 		838D5A8322C6181A005661B3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8222C6181A005661B3 /* Models.swift */; };
@@ -21,23 +19,6 @@
 		838D5A8F22C6699C005661B3 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8E22C6699C005661B3 /* HistoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		32A1870A22C615640056F549 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32A186EB22C615640056F549 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 32A186F222C615640056F549;
-			remoteInfo = SocialMood;
-		};
-		32A1871522C615640056F549 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32A186EB22C615640056F549 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 32A186F222C615640056F549;
-			remoteInfo = SocialMood;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		32A186F322C615640056F549 /* SocialMood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A186F622C615640056F549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,12 +26,6 @@
 		32A186FF22C615640056F549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32A1870222C615640056F549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32A1870422C615640056F549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32A1870922C615640056F549 /* SocialMoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialMoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		32A1870D22C615640056F549 /* SocialMoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMoodTests.swift; sourceTree = "<group>"; };
-		32A1870F22C615640056F549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32A1871422C615640056F549 /* SocialMoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialMoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		32A1871822C615640056F549 /* SocialMoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMoodUITests.swift; sourceTree = "<group>"; };
-		32A1871A22C615640056F549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EB5BF1422C6437C00326C56 /* EmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewController.swift; sourceTree = "<group>"; };
 		838D5A8022C6175E005661B3 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		838D5A8222C6181A005661B3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -67,30 +42,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32A1870622C615640056F549 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		32A1871122C615640056F549 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		32A186EA22C615640056F549 = {
 			isa = PBXGroup;
 			children = (
-				838D5A7F22C61736005661B3 /* Model */,
-				32A186F522C615640056F549 /* SocialMood */,
-				32A1870C22C615640056F549 /* SocialMoodTests */,
-				32A1871722C615640056F549 /* SocialMoodUITests */,
+				83C3F31722C6CA92000F6452 /* SocialMood */,
 				32A186F422C615640056F549 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,44 +57,20 @@
 			isa = PBXGroup;
 			children = (
 				32A186F322C615640056F549 /* SocialMood.app */,
-				32A1870922C615640056F549 /* SocialMoodTests.xctest */,
-				32A1871422C615640056F549 /* SocialMoodUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		32A186F522C615640056F549 /* SocialMood */ = {
+		32A186F522C615640056F549 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				32A186F622C615640056F549 /* AppDelegate.swift */,
 				32A186FC22C615640056F549 /* Main.storyboard */,
-				838D5A8C22C64B19005661B3 /* HistoryViewController.swift */,
-				838D5A8822C64A19005661B3 /* SocialViewController.swift */,
-				7EB5BF1422C6437C00326C56 /* EmojiViewController.swift */,
 				32A186FF22C615640056F549 /* Assets.xcassets */,
 				32A1870122C615640056F549 /* LaunchScreen.storyboard */,
 				32A1870422C615640056F549 /* Info.plist */,
-				838D5A8E22C6699C005661B3 /* HistoryTableViewCell.swift */,
 			);
-			path = SocialMood;
-			sourceTree = "<group>";
-		};
-		32A1870C22C615640056F549 /* SocialMoodTests */ = {
-			isa = PBXGroup;
-			children = (
-				32A1870D22C615640056F549 /* SocialMoodTests.swift */,
-				32A1870F22C615640056F549 /* Info.plist */,
-			);
-			path = SocialMoodTests;
-			sourceTree = "<group>";
-		};
-		32A1871722C615640056F549 /* SocialMoodUITests */ = {
-			isa = PBXGroup;
-			children = (
-				32A1871822C615640056F549 /* SocialMoodUITests.swift */,
-				32A1871A22C615640056F549 /* Info.plist */,
-			);
-			path = SocialMoodUITests;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		838D5A7F22C61736005661B3 /* Model */ = {
@@ -146,6 +80,35 @@
 				838D5A8222C6181A005661B3 /* Models.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		83C3F31422C6C941000F6452 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				838D5A8C22C64B19005661B3 /* HistoryViewController.swift */,
+				838D5A8822C64A19005661B3 /* SocialViewController.swift */,
+				7EB5BF1422C6437C00326C56 /* EmojiViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83C3F31622C6CA1A000F6452 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				838D5A8E22C6699C005661B3 /* HistoryTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83C3F31722C6CA92000F6452 /* SocialMood */ = {
+			isa = PBXGroup;
+			children = (
+				838D5A7F22C61736005661B3 /* Model */,
+				83C3F31622C6CA1A000F6452 /* View */,
+				83C3F31422C6C941000F6452 /* Controller */,
+				32A186F522C615640056F549 /* Supporting Files */,
+			);
+			path = SocialMood;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,42 +131,6 @@
 			productReference = 32A186F322C615640056F549 /* SocialMood.app */;
 			productType = "com.apple.product-type.application";
 		};
-		32A1870822C615640056F549 /* SocialMoodTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 32A1872022C615640056F549 /* Build configuration list for PBXNativeTarget "SocialMoodTests" */;
-			buildPhases = (
-				32A1870522C615640056F549 /* Sources */,
-				32A1870622C615640056F549 /* Frameworks */,
-				32A1870722C615640056F549 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				32A1870B22C615640056F549 /* PBXTargetDependency */,
-			);
-			name = SocialMoodTests;
-			productName = SocialMoodTests;
-			productReference = 32A1870922C615640056F549 /* SocialMoodTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		32A1871322C615640056F549 /* SocialMoodUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 32A1872322C615640056F549 /* Build configuration list for PBXNativeTarget "SocialMoodUITests" */;
-			buildPhases = (
-				32A1871022C615640056F549 /* Sources */,
-				32A1871122C615640056F549 /* Frameworks */,
-				32A1871222C615640056F549 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				32A1871622C615640056F549 /* PBXTargetDependency */,
-			);
-			name = SocialMoodUITests;
-			productName = SocialMoodUITests;
-			productReference = 32A1871422C615640056F549 /* SocialMoodUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -216,14 +143,6 @@
 				TargetAttributes = {
 					32A186F222C615640056F549 = {
 						CreatedOnToolsVersion = 10.2.1;
-					};
-					32A1870822C615640056F549 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 32A186F222C615640056F549;
-					};
-					32A1871322C615640056F549 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 32A186F222C615640056F549;
 					};
 				};
 			};
@@ -241,8 +160,6 @@
 			projectRoot = "";
 			targets = (
 				32A186F222C615640056F549 /* SocialMood */,
-				32A1870822C615640056F549 /* SocialMoodTests */,
-				32A1871322C615640056F549 /* SocialMoodUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,20 +172,6 @@
 				32A1870322C615640056F549 /* LaunchScreen.storyboard in Resources */,
 				32A1870022C615640056F549 /* Assets.xcassets in Resources */,
 				32A186FE22C615640056F549 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		32A1870722C615640056F549 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		32A1871222C615640056F549 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,36 +192,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32A1870522C615640056F549 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				32A1870E22C615640056F549 /* SocialMoodTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		32A1871022C615640056F549 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				32A1871922C615640056F549 /* SocialMoodUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		32A1870B22C615640056F549 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 32A186F222C615640056F549 /* SocialMood */;
-			targetProxy = 32A1870A22C615640056F549 /* PBXContainerItemProxy */;
-		};
-		32A1871622C615640056F549 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 32A186F222C615640056F549 /* SocialMood */;
-			targetProxy = 32A1871522C615640056F549 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		32A186FC22C615640056F549 /* Main.storyboard */ = {
@@ -461,8 +335,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MP48V474YF;
-				INFOPLIST_FILE = SocialMood/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/SocialMood/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,8 +353,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MP48V474YF;
-				INFOPLIST_FILE = SocialMood/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/SocialMood/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,84 +363,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		32A1872122C615640056F549 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SocialMoodTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SocialMoodTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialMood.app/SocialMood";
-			};
-			name = Debug;
-		};
-		32A1872222C615640056F549 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SocialMoodTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SocialMoodTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialMood.app/SocialMood";
-			};
-			name = Release;
-		};
-		32A1872422C615640056F549 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SocialMoodUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SocialMoodUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SocialMood;
-			};
-			name = Debug;
-		};
-		32A1872522C615640056F549 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SocialMoodUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SocialMoodUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SocialMood;
 			};
 			name = Release;
 		};
@@ -587,24 +383,6 @@
 			buildConfigurations = (
 				32A1871E22C615640056F549 /* Debug */,
 				32A1871F22C615640056F549 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		32A1872022C615640056F549 /* Build configuration list for PBXNativeTarget "SocialMoodTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				32A1872122C615640056F549 /* Debug */,
-				32A1872222C615640056F549 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		32A1872322C615640056F549 /* Build configuration list for PBXNativeTarget "SocialMoodUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				32A1872422C615640056F549 /* Debug */,
-				32A1872522C615640056F549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
