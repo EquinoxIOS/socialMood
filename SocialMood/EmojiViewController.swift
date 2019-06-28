@@ -10,21 +10,40 @@ import UIKit
 
 class EmojiViewController: UIViewController {
 
+    @IBOutlet weak var animatingLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        animatingLabel.text = ""
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.animateAppName()
     }
-    */
-
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func animateAppName() {
+        animatingLabel.text = ""
+        
+        let appName = "How are you?"
+        
+        // New code using Timer class
+        
+        let characters = appName.map { $0 }
+        var index = 0
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { [weak self] timer in
+            if index < appName.count {
+                let char = characters[index]
+                self?.animatingLabel.text! += "\(char)"
+                index += 1
+            } else {
+                timer.invalidate()
+            }
+        })
+        
+    }
 }
