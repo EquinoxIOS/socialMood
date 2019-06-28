@@ -13,6 +13,7 @@
 		32A1870322C615640056F549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A1870122C615640056F549 /* LaunchScreen.storyboard */; };
 		32A1870E22C615640056F549 /* SocialMoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A1870D22C615640056F549 /* SocialMoodTests.swift */; };
 		32A1871922C615640056F549 /* SocialMoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A1871822C615640056F549 /* SocialMoodUITests.swift */; };
+		7EB5BF1522C6437C00326C56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB5BF1422C6437C00326C56 /* ViewController.swift */; };
 		838D5A8122C6175E005661B3 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8022C6175E005661B3 /* Mood.swift */; };
 		838D5A8322C6181A005661B3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8222C6181A005661B3 /* Models.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		32A1871422C615640056F549 /* SocialMoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialMoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A1871822C615640056F549 /* SocialMoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMoodUITests.swift; sourceTree = "<group>"; };
 		32A1871A22C615640056F549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EB5BF1422C6437C00326C56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		838D5A8022C6175E005661B3 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		838D5A8222C6181A005661B3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 			children = (
 				32A186F622C615640056F549 /* AppDelegate.swift */,
 				32A186FC22C615640056F549 /* Main.storyboard */,
+				7EB5BF1422C6437C00326C56 /* ViewController.swift */,
 				32A186FF22C615640056F549 /* Assets.xcassets */,
 				32A1870122C615640056F549 /* LaunchScreen.storyboard */,
 				32A1870422C615640056F549 /* Info.plist */,
@@ -269,6 +272,7 @@
 			files = (
 				838D5A8322C6181A005661B3 /* Models.swift in Sources */,
 				838D5A8122C6175E005661B3 /* Mood.swift in Sources */,
+				7EB5BF1522C6437C00326C56 /* ViewController.swift in Sources */,
 				32A186F722C615640056F549 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
