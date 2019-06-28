@@ -11,10 +11,12 @@ import UIKit
 
 struct Social {
     var name: String
+    var assetName : String
 }
 
 struct Emoji {
     var name: String
+    var assetName : String
 }
 
 struct Theme {
