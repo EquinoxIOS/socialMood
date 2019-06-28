@@ -18,24 +18,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="s0Q-Eb-ICM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="s0Q-Eb-ICM">
                                 <rect key="frame" x="53" y="202" width="308" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="55"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BKz-Zw-94C">
+                                <rect key="frame" x="17" y="410" width="380" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeO-0r-8t7">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+                                        <state key="normal" image="Happy"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdp-PK-qEQ">
+                                        <rect key="frame" x="76" y="0.0" width="76" height="76"/>
+                                        <state key="normal" image="Cool"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKV-zS-hMR">
+                                        <rect key="frame" x="152" y="0.0" width="76" height="76"/>
+                                        <state key="normal" image="Middle"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SN1-q9-1qM">
+                                        <rect key="frame" x="228" y="0.0" width="76" height="76"/>
+                                        <state key="normal" image="Sad"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-9P-mFP">
+                                        <rect key="frame" x="304" y="0.0" width="76" height="76"/>
+                                        <state key="normal" image="Angry"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="s0Q-Eb-ICM" firstAttribute="centerX" secondItem="7Ex-m2-uZD" secondAttribute="centerX" id="Bbu-NJ-BgT"/>
-                            <constraint firstItem="s0Q-Eb-ICM" firstAttribute="top" secondItem="gun-QW-xlR" secondAttribute="top" constant="114" id="nJ5-5y-OQk"/>
-                            <constraint firstItem="s0Q-Eb-ICM" firstAttribute="leading" secondItem="gun-QW-xlR" secondAttribute="leading" constant="53" id="xuA-Ec-qiA"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gun-QW-xlR"/>
                     </view>
                     <navigationItem key="navigationItem" id="nW1-bb-0WM"/>
                     <connections>
+                        <outlet property="Sadest" destination="QeO-0r-8t7" id="tjU-CZ-k46"/>
                         <outlet property="animatingLabel" destination="s0Q-Eb-ICM" id="CVn-Qk-PYD"/>
+                        <outlet property="happier" destination="SN1-q9-1qM" id="mvy-mL-reE"/>
+                        <outlet property="happiest" destination="ZhO-9P-mFP" id="6oW-vF-Zsk"/>
+                        <outlet property="neutral" destination="dKV-zS-hMR" id="LDD-Op-mjU"/>
+                        <outlet property="sad" destination="Xdp-PK-qEQ" id="hbK-aS-V7n"/>
+                        <outlet property="sadest" destination="QeO-0r-8t7" id="34W-ew-GKK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txT-ZA-eYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -157,4 +185,11 @@
             <point key="canvasLocation" x="-549" y="-70"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Angry" width="76" height="76"/>
+        <image name="Cool" width="76" height="76"/>
+        <image name="Happy" width="76" height="76"/>
+        <image name="Middle" width="76" height="76"/>
+        <image name="Sad" width="76" height="76"/>
+    </resources>
 </document>

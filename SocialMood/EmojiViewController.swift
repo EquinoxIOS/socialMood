@@ -10,16 +10,36 @@ import UIKit
 
 class EmojiViewController: UIViewController {
 
+    
+    @IBOutlet weak var sadest: UIButton!
+    
+    @IBOutlet weak var sad: UIButton!
+    
+    @IBOutlet weak var neutral: UIButton!
+    
+    @IBOutlet weak var happier: UIButton!
+    
+    @IBOutlet weak var happiest: UIButton!
+    
     @IBOutlet weak var animatingLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        animatingLabel.text = ""
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.buttonImages()
         self.animateAppName()
     }
+    
+    
+    
+    func buttonImages() {
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
