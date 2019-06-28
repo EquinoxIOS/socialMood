@@ -10,20 +10,69 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Emoji View Controller-->
         <scene sceneID="h6k-WW-mRJ">
             <objects>
-                <viewController id="7Mu-ZC-MAs" customClass="ViewController" customModule="SocialMood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Mu-ZC-MAs" customClass="EmojiViewController" customModule="SocialMood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ex-m2-uZD" customClass="View">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gun-QW-xlR"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nW1-bb-0WM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txT-ZA-eYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-58" y="10"/>
+            <point key="canvasLocation" x="219" y="-68"/>
+        </scene>
+        <!--Social View Controller-->
+        <scene sceneID="7dt-Cs-nYi">
+            <objects>
+                <viewController id="Ekh-OM-fPZ" customClass="SocialViewController" customModule="SocialMood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gbC-Ib-vQF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kT7-55-fGd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EPD-Cf-64B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="-69"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="dol-F4-7KQ">
+            <objects>
+                <viewController id="avc-ro-BNq" customClass="HistoryViewController" customModule="SocialMood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EVO-uc-MAH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="T6e-SH-x8i"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="auZ-VE-AOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="624"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NMJ-HI-Orf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jJQ-h2-YqO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HlS-X3-B4J">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Mu-ZC-MAs" kind="relationship" relationship="rootViewController" id="zih-e9-URY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qyb-qr-hWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-549" y="-70"/>
         </scene>
     </scenes>
 </document>

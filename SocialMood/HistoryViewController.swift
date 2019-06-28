@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  HistoryViewController.swift
 //  SocialMood
 //
-//  Created by Zain Zafar on 28/06/2019.
+//  Created by Bachir SAHALI on 28/06/2019.
 //  Copyright © 2019 Néphélim Cohen. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class HistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
