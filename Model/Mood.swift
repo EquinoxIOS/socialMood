@@ -9,11 +9,13 @@
 import Foundation
 
 struct Mood {
+    var emojiSelected: String
     var date: Date
     var note: String?
     var socialSelected: [Social]
     
-    init(date: Date, note: String?,  socialSelected: [Social]) {
+    init(emojiSelected: String, date: Date, note: String?,  socialSelected: [Social]) {
+        self.emojiSelected = emojiSelected
         self.date = Date()
         self.note = note
         self.socialSelected = socialSelected
