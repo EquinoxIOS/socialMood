@@ -13,8 +13,11 @@
 		32A1870322C615640056F549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A1870122C615640056F549 /* LaunchScreen.storyboard */; };
 		32A1870E22C615640056F549 /* SocialMoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A1870D22C615640056F549 /* SocialMoodTests.swift */; };
 		32A1871922C615640056F549 /* SocialMoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A1871822C615640056F549 /* SocialMoodUITests.swift */; };
+		7EB5BF1522C6437C00326C56 /* EmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB5BF1422C6437C00326C56 /* EmojiViewController.swift */; };
 		838D5A8122C6175E005661B3 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8022C6175E005661B3 /* Mood.swift */; };
 		838D5A8322C6181A005661B3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8222C6181A005661B3 /* Models.swift */; };
+		838D5A8A22C64A19005661B3 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8822C64A19005661B3 /* SocialViewController.swift */; };
+		838D5A8D22C64B19005661B3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8C22C64B19005661B3 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +50,11 @@
 		32A1871422C615640056F549 /* SocialMoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialMoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A1871822C615640056F549 /* SocialMoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMoodUITests.swift; sourceTree = "<group>"; };
 		32A1871A22C615640056F549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EB5BF1422C6437C00326C56 /* EmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewController.swift; sourceTree = "<group>"; };
 		838D5A8022C6175E005661B3 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		838D5A8222C6181A005661B3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		838D5A8822C64A19005661B3 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		838D5A8C22C64B19005661B3 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 			children = (
 				32A186F622C615640056F549 /* AppDelegate.swift */,
 				32A186FC22C615640056F549 /* Main.storyboard */,
+				838D5A8C22C64B19005661B3 /* HistoryViewController.swift */,
+				838D5A8822C64A19005661B3 /* SocialViewController.swift */,
+				7EB5BF1422C6437C00326C56 /* EmojiViewController.swift */,
 				32A186FF22C615640056F549 /* Assets.xcassets */,
 				32A1870122C615640056F549 /* LaunchScreen.storyboard */,
 				32A1870422C615640056F549 /* Info.plist */,
@@ -267,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838D5A8A22C64A19005661B3 /* SocialViewController.swift in Sources */,
 				838D5A8322C6181A005661B3 /* Models.swift in Sources */,
 				838D5A8122C6175E005661B3 /* Mood.swift in Sources */,
+				838D5A8D22C64B19005661B3 /* HistoryViewController.swift in Sources */,
+				7EB5BF1522C6437C00326C56 /* EmojiViewController.swift in Sources */,
 				32A186F722C615640056F549 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
