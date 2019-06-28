@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="How are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0Q-Eb-ICM">
-                                <rect key="frame" x="52.5" y="202" width="309" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="s0Q-Eb-ICM">
+                                <rect key="frame" x="53" y="202" width="308" height="66"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="55"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -28,6 +28,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="s0Q-Eb-ICM" firstAttribute="centerX" secondItem="7Ex-m2-uZD" secondAttribute="centerX" id="Bbu-NJ-BgT"/>
+                            <constraint firstItem="s0Q-Eb-ICM" firstAttribute="top" secondItem="gun-QW-xlR" secondAttribute="top" constant="114" id="nJ5-5y-OQk"/>
+                            <constraint firstItem="s0Q-Eb-ICM" firstAttribute="leading" secondItem="gun-QW-xlR" secondAttribute="leading" constant="53" id="xuA-Ec-qiA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gun-QW-xlR"/>
                     </view>
