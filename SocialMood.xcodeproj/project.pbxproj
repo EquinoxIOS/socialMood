@@ -15,6 +15,8 @@
 		32A1870322C615640056F549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A1870122C615640056F549 /* LaunchScreen.storyboard */; };
 		32A1870E22C615640056F549 /* SocialMoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A1870D22C615640056F549 /* SocialMoodTests.swift */; };
 		32A1871922C615640056F549 /* SocialMoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A1871822C615640056F549 /* SocialMoodUITests.swift */; };
+		838D5A8122C6175E005661B3 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8022C6175E005661B3 /* Mood.swift */; };
+		838D5A8322C6181A005661B3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8222C6181A005661B3 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		32A1871422C615640056F549 /* SocialMoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialMoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A1871822C615640056F549 /* SocialMoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMoodUITests.swift; sourceTree = "<group>"; };
 		32A1871A22C615640056F549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838D5A8022C6175E005661B3 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		838D5A8222C6181A005661B3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		32A186F522C615640056F549 /* SocialMood */ = {
 			isa = PBXGroup;
 			children = (
+				838D5A7F22C61736005661B3 /* Model */,
 				32A186F622C615640056F549 /* AppDelegate.swift */,
 				32A186F822C615640056F549 /* FirstViewController.swift */,
 				32A186FA22C615640056F549 /* SecondViewController.swift */,
@@ -126,6 +131,15 @@
 				32A1871A22C615640056F549 /* Info.plist */,
 			);
 			path = SocialMoodUITests;
+			sourceTree = "<group>";
+		};
+		838D5A7F22C61736005661B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				838D5A8022C6175E005661B3 /* Mood.swift */,
+				838D5A8222C6181A005661B3 /* Models.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838D5A8322C6181A005661B3 /* Models.swift in Sources */,
+				838D5A8122C6175E005661B3 /* Mood.swift in Sources */,
 				32A186FB22C615640056F549 /* SecondViewController.swift in Sources */,
 				32A186F722C615640056F549 /* AppDelegate.swift in Sources */,
 				32A186F922C615640056F549 /* FirstViewController.swift in Sources */,
