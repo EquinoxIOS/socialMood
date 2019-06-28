@@ -10,6 +10,7 @@ import UIKit
 
 class HistoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
+    @IBOutlet weak var moodHistoryIV: UIImageView!
     
     var tabSocial: [Social] = []
    
@@ -28,7 +29,6 @@ class HistoryViewController: UIViewController, UITableViewDataSource, UITableVie
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath)
         
-        cell.imageView?.image = #imageLiteral(resourceName: "Happy")
         return cell
         
     }

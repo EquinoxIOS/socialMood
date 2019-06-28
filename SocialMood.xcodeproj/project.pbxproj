@@ -18,6 +18,7 @@
 		838D5A8322C6181A005661B3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8222C6181A005661B3 /* Models.swift */; };
 		838D5A8A22C64A19005661B3 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8822C64A19005661B3 /* SocialViewController.swift */; };
 		838D5A8D22C64B19005661B3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8C22C64B19005661B3 /* HistoryViewController.swift */; };
+		838D5A8F22C6699C005661B3 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8E22C6699C005661B3 /* HistoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		838D5A8222C6181A005661B3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		838D5A8822C64A19005661B3 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		838D5A8C22C64B19005661B3 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		838D5A8E22C6699C005661B3 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				32A186FF22C615640056F549 /* Assets.xcassets */,
 				32A1870122C615640056F549 /* LaunchScreen.storyboard */,
 				32A1870422C615640056F549 /* Info.plist */,
+				838D5A8E22C6699C005661B3 /* HistoryTableViewCell.swift */,
 			);
 			path = SocialMood;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				838D5A8A22C64A19005661B3 /* SocialViewController.swift in Sources */,
 				838D5A8322C6181A005661B3 /* Models.swift in Sources */,
+				838D5A8F22C6699C005661B3 /* HistoryTableViewCell.swift in Sources */,
 				838D5A8122C6175E005661B3 /* Mood.swift in Sources */,
 				838D5A8D22C64B19005661B3 /* HistoryViewController.swift in Sources */,
 				7EB5BF1522C6437C00326C56 /* EmojiViewController.swift in Sources */,
