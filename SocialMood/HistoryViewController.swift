@@ -8,7 +8,24 @@
 
 import UIKit
 
-class HistoryViewController: UIViewController {
+class HistoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    let tabMood = [Mood]()
+    let social = [Social(name: "Facebook", assetName: "FB")]
+    
+    
+    let mood1 = Mood(emojiSelected: "Happy", date: Date(), note: "Commentaire", socialSelected: social)
+    
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

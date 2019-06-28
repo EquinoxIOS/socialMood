@@ -10,18 +10,27 @@ import Foundation
 import UIKit
 
 struct Social {
-    var name: String
-    var assetName : String
+    let name: String
+    let assetName : String
+    
+    init(name: String, assetName: String) {
+        self.name = name
+        self.assetName = name
+    }
 }
 
 struct Emoji {
-    var name: String
-    var assetName : String
+    let name: String
+    let assetName : String
+    
+    init(name: String, assetName: String) {
+        self.name = name
+        self.assetName = name
+}
 }
 
 struct Theme {
-    var name: String
-    var backgroundColor: UIColor
-    var textColor: UIColor
-    
+    let name: String
+    let backgroundColor: UIColor
+    let textColor: UIColor
 }
