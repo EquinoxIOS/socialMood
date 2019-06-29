@@ -9,7 +9,7 @@
 import UIKit
 
 class HistoryTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var emojiImageView: UIImageView!
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var noteLabel: UILabel!
@@ -24,20 +24,23 @@ class HistoryTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
-    func configure(emojiAsset: String, emojiName: String, note: String?, social1Asset: String?, social2Asset: String?, social3Asset: String?, social4Asset: String?, social5Asset: String?, social6Asset: String? ) {
+    
+    
+    
+    
+    func configure(emojiAsset: String, emojiName: String, social1Asset: String, note: String? = nil, social2Asset: String? = nil, social3Asset: String? = nil, social4Asset: String? = nil, social5Asset: String? = nil, social6Asset: String? = nil ) {
         
         emojiImageView.image = UIImage(named: emojiAsset)
         emojiLabel.text = emojiName
         noteLabel.text = note
         
-        if let social1 = social1Asset { socialImageView1.image = UIImage(named: social1)}
+        socialImageView1.image = UIImage(named: social1Asset)
         if let social2 = social2Asset { socialImageView2.image = UIImage(named: social2)}
         if let social3 = social3Asset { socialImageView3.image = UIImage(named: social3)}
         if let social4 = social4Asset { socialImageView4.image = UIImage(named: social4)}

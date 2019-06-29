@@ -47,11 +47,13 @@ extension HistoryViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-         let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath) as? HistoryTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath) as? HistoryTableViewCell else {
+            return UITableViewCell()
+        }
         
-        cell!.configure(emojiAsset: "Happy", emojiName: "Happy", note: "note", social1Asset: "FB", social2Asset: "IG", social3Asset: "SC", social4Asset: "TT", social5Asset: "WA", social6Asset: "YT")
+        cell.configure(emojiAsset: "Happy", emojiName: "Happy", social1Asset: "FB", social2Asset: "YT" )
         
-        return cell!
+        return cell
         
     }
     
