@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="avc-ro-BNq">
-    <device id="retina6_1" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7Mu-ZC-MAs">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -21,47 +21,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="s0Q-Eb-ICM">
-                                <rect key="frame" x="53" y="202" width="308" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="s0Q-Eb-ICM">
+                                <rect key="frame" x="52.666666666666657" y="138" width="309" height="65.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="55"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BKz-Zw-94C">
-                                <rect key="frame" x="17" y="410" width="380" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BKz-Zw-94C">
+                                <rect key="frame" x="16.333333333333343" y="410" width="381.66666666666663" height="76.333333333333314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeO-0r-8t7">
-                                        <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="76.333333333333329" height="76.333333333333329"/>
                                         <state key="normal" image="Angry"/>
                                         <connections>
                                             <action selector="nextTapped:" destination="7Mu-ZC-MAs" eventType="touchUpInside" id="Nc1-19-c3Z"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdp-PK-qEQ">
-                                        <rect key="frame" x="76" y="0.0" width="76" height="76"/>
+                                        <rect key="frame" x="76.333333333333343" y="0.0" width="76.333333333333343" height="76.333333333333329"/>
                                         <state key="normal" image="Sad"/>
                                         <connections>
                                             <action selector="nextTapped:" destination="7Mu-ZC-MAs" eventType="touchUpInside" id="iAM-Jc-IG1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKV-zS-hMR">
-                                        <rect key="frame" x="152" y="0.0" width="76" height="76"/>
+                                        <rect key="frame" x="152.66666666666666" y="0.0" width="76.333333333333343" height="76.333333333333329"/>
                                         <state key="normal" image="Middle"/>
                                         <connections>
                                             <action selector="nextTapped:" destination="7Mu-ZC-MAs" eventType="touchUpInside" id="0AB-17-BqY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SN1-q9-1qM">
-                                        <rect key="frame" x="228" y="0.0" width="76" height="76"/>
+                                        <rect key="frame" x="229.00000000000003" y="0.0" width="76.333333333333343" height="76.333333333333329"/>
                                         <state key="normal" image="Cool"/>
                                         <connections>
                                             <action selector="nextTapped:" destination="7Mu-ZC-MAs" eventType="touchUpInside" id="ias-Dh-YOU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-9P-mFP">
-                                        <rect key="frame" x="304" y="0.0" width="76" height="76"/>
+                                        <rect key="frame" x="305.33333333333337" y="0.0" width="76.333333333333314" height="76.333333333333329"/>
                                         <state key="normal" image="Happy"/>
                                         <connections>
                                             <action selector="nextTapped:" destination="7Mu-ZC-MAs" eventType="touchUpInside" id="sUf-t6-hy1"/>
@@ -69,15 +67,25 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HUZ-6J-xhM">
-                                <rect key="frame" x="138" y="800" width="138" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HUZ-6J-xhM">
+                                <rect key="frame" x="138" y="782" width="138" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="xdT-3i-aqN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BKz-Zw-94C" firstAttribute="centerY" secondItem="7Ex-m2-uZD" secondAttribute="centerY" id="3Ji-sn-vVf"/>
+                            <constraint firstItem="HUZ-6J-xhM" firstAttribute="centerX" secondItem="BKz-Zw-94C" secondAttribute="centerX" id="XXL-Pb-eeW"/>
+                            <constraint firstItem="VrK-ej-ReR" firstAttribute="top" secondItem="HUZ-6J-xhM" secondAttribute="bottom" constant="50" id="hWF-Qr-r0W"/>
+                            <constraint firstItem="s0Q-Eb-ICM" firstAttribute="centerX" secondItem="7Ex-m2-uZD" secondAttribute="centerX" id="i4V-Dd-zTG"/>
+                            <constraint firstItem="BKz-Zw-94C" firstAttribute="centerX" secondItem="7Ex-m2-uZD" secondAttribute="centerX" id="kzn-2E-lEd"/>
+                            <constraint firstItem="s0Q-Eb-ICM" firstAttribute="top" secondItem="RWX-Tc-ENk" secondAttribute="bottom" constant="50" id="v4B-fr-uBI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nW1-bb-0WM"/>
                     <connections>
@@ -113,38 +121,38 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4HD-Ej-Ras">
-                                <rect key="frame" x="20" y="372" width="374" height="152"/>
+                                <rect key="frame" x="20" y="371.66666666666669" width="374" height="152.66666666666669"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MMS-ZM-yM2">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="76"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="76.333333333333329"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcc-LI-RK3">
-                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="76"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="76.333333333333329"/>
                                                 <state key="normal" image="FB"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHh-uu-z7k">
-                                                <rect key="frame" x="124.5" y="0.0" width="125" height="76"/>
+                                                <rect key="frame" x="124.66666666666666" y="0.0" width="124.66666666666666" height="76.333333333333329"/>
                                                 <state key="normal" image="IG"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqQ-cU-5cf">
-                                                <rect key="frame" x="249.5" y="0.0" width="124.5" height="76"/>
+                                                <rect key="frame" x="249.33333333333329" y="0.0" width="124.66666666666666" height="76.333333333333329"/>
                                                 <state key="normal" image="TT"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jna-lV-rgg">
-                                        <rect key="frame" x="0.0" y="76" width="374" height="76"/>
+                                        <rect key="frame" x="0.0" y="76.333333333333314" width="374" height="76.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPg-QY-cmw">
-                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="76"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="76.333333333333329"/>
                                                 <state key="normal" image="WA"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juk-S6-mds">
-                                                <rect key="frame" x="124.5" y="0.0" width="125" height="76"/>
+                                                <rect key="frame" x="124.66666666666666" y="0.0" width="124.66666666666666" height="76.333333333333329"/>
                                                 <state key="normal" image="YT"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NH-9k-I1P">
-                                                <rect key="frame" x="249.5" y="0.0" width="124.5" height="76"/>
+                                                <rect key="frame" x="249.33333333333329" y="0.0" width="124.66666666666666" height="76.333333333333329"/>
                                                 <state key="normal" image="SC"/>
                                             </button>
                                         </subviews>
@@ -182,10 +190,10 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" rowHeight="100" id="EC2-UH-FHF" customClass="HistoryTableViewCell" customModule="SocialMood" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="100"/>
+                                        <rect key="frame" x="0.0" y="55.333333333333343" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EC2-UH-FHF" id="3RV-mw-Tm6">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJS-0F-SDn">
@@ -285,15 +293,15 @@
     </scenes>
     <resources>
         <image name="Angry" width="76" height="76"/>
-        <image name="Cool" width="76" height="76"/>
-        <image name="FB" width="76" height="76"/>
-        <image name="Happy" width="76" height="76"/>
-        <image name="IG" width="76" height="76"/>
-        <image name="Middle" width="76" height="76"/>
-        <image name="SC" width="76" height="76"/>
-        <image name="Sad" width="76" height="76"/>
-        <image name="TT" width="76" height="76"/>
-        <image name="WA" width="76" height="76"/>
+        <image name="Cool" width="76" height="76.333335876464844"/>
+        <image name="FB" width="76.333335876464844" height="76"/>
+        <image name="Happy" width="76.333335876464844" height="76.333335876464844"/>
+        <image name="IG" width="76.333335876464844" height="76.333335876464844"/>
+        <image name="Middle" width="76.333335876464844" height="76"/>
+        <image name="SC" width="76.333335876464844" height="76.333335876464844"/>
+        <image name="Sad" width="76.333335876464844" height="76"/>
+        <image name="TT" width="76.333335876464844" height="76.333335876464844"/>
+        <image name="WA" width="76" height="76.333335876464844"/>
         <image name="YT" width="76" height="76"/>
         <image name="fondclassique" width="375" height="812"/>
     </resources>
