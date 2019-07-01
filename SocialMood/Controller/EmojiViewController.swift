@@ -27,6 +27,7 @@ class EmojiViewController: UIViewController {
     var emojiSelected: Emoji!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
     }
     
