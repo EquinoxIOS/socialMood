@@ -27,9 +27,9 @@ struct Mood: Codable {
     var emojiSelected: String
     var date: Date
     var note: String?
-    var socialSelected: [String]
+    var socialSelected: [String]?
     
-    init(emojiSelected: String, note: String?,  socialSelected: [String]) {
+    init(emojiSelected: String, note: String?,  socialSelected: [String]?) {
         self.emojiSelected = emojiSelected
         self.date = Date()
         self.note = note
