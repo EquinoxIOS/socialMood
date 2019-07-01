@@ -34,26 +34,48 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeO-0r-8t7">
                                         <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
-                                        <state key="normal" image="Happy"/>
+                                        <state key="normal" image="Angry"/>
+                                        <connections>
+                                            <action selector="nextTapped:" destination="7Mu-ZC-MAs" eventType="touchUpInside" id="Nc1-19-c3Z"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdp-PK-qEQ">
                                         <rect key="frame" x="76" y="0.0" width="76" height="76"/>
-                                        <state key="normal" image="Cool"/>
+                                        <state key="normal" image="Sad"/>
+                                        <connections>
+                                            <action selector="nextTapped:" destination="7Mu-ZC-MAs" eventType="touchUpInside" id="iAM-Jc-IG1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKV-zS-hMR">
                                         <rect key="frame" x="152" y="0.0" width="76" height="76"/>
                                         <state key="normal" image="Middle"/>
+                                        <connections>
+                                            <action selector="nextTapped:" destination="7Mu-ZC-MAs" eventType="touchUpInside" id="0AB-17-BqY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SN1-q9-1qM">
                                         <rect key="frame" x="228" y="0.0" width="76" height="76"/>
-                                        <state key="normal" image="Sad"/>
+                                        <state key="normal" image="Cool"/>
+                                        <connections>
+                                            <action selector="nextTapped:" destination="7Mu-ZC-MAs" eventType="touchUpInside" id="ias-Dh-YOU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhO-9P-mFP">
                                         <rect key="frame" x="304" y="0.0" width="76" height="76"/>
-                                        <state key="normal" image="Angry"/>
+                                        <state key="normal" image="Happy"/>
+                                        <connections>
+                                            <action selector="nextTapped:" destination="7Mu-ZC-MAs" eventType="touchUpInside" id="sUf-t6-hy1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HUZ-6J-xhM">
+                                <rect key="frame" x="138" y="800" width="138" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -61,11 +83,13 @@
                     <connections>
                         <outlet property="Sadest" destination="QeO-0r-8t7" id="tjU-CZ-k46"/>
                         <outlet property="animatingLabel" destination="s0Q-Eb-ICM" id="CVn-Qk-PYD"/>
+                        <outlet property="dateT" destination="HUZ-6J-xhM" id="n1R-kh-etB"/>
                         <outlet property="happier" destination="SN1-q9-1qM" id="mvy-mL-reE"/>
                         <outlet property="happiest" destination="ZhO-9P-mFP" id="6oW-vF-Zsk"/>
                         <outlet property="neutral" destination="dKV-zS-hMR" id="LDD-Op-mjU"/>
                         <outlet property="sad" destination="Xdp-PK-qEQ" id="hbK-aS-V7n"/>
                         <outlet property="sadest" destination="QeO-0r-8t7" id="34W-ew-GKK"/>
+                        <segue destination="Ekh-OM-fPZ" kind="show" identifier="seg1" id="J2m-yU-7X5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txT-ZA-eYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -75,7 +99,7 @@
         <!--Social View Controller-->
         <scene sceneID="7dt-Cs-nYi">
             <objects>
-                <viewController id="Ekh-OM-fPZ" customClass="SocialViewController" customModule="SocialMood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="second" id="Ekh-OM-fPZ" customClass="SocialViewController" customModule="SocialMood" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FMp-gJ-YA1"/>
                         <viewControllerLayoutGuide type="bottom" id="cKN-9W-cex"/>
