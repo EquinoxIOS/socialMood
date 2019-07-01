@@ -9,7 +9,8 @@
 import UIKit
 
 class SocialViewController: UIViewController {
-
+    var recievedEmoji: Emoji!
+    
     override func viewDidLoad() {
         
         let mood = Mood(emojiSelected: ":)", note: "fhdjsh", socialSelected: ["fb"])

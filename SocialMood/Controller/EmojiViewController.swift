@@ -10,6 +10,7 @@ import UIKit
 
 class EmojiViewController: UIViewController {
 
+    @IBOutlet weak var dateT: UILabel!
     
     @IBOutlet weak var sadest: UIButton!
     
@@ -23,21 +24,50 @@ class EmojiViewController: UIViewController {
     
     @IBOutlet weak var animatingLabel: UILabel!
     
-    
+    var emojiSelected: Emoji!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.buttonImages()
         self.animateAppName()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "seg1"){
+            let displayVC = segue.destination as! SocialViewController
+            displayVC.recievedEmoji = emojiSelected
+        }
+    }
     
+    @IBAction func nextTapped(_ sender: UIButton) {
+        switch sender {
+        case sadest:
+            emojiSelected = Emoji(name: "Angry", assetName: "Angry")
+        case sad:
+            emojiSelected = Emoji(name: "Sad", assetName: "Sad")
+        case neutral:
+            emojiSelected = Emoji(name: "Middle", assetName: "Middle")
+        case happier:
+            emojiSelected = Emoji(name: "Cool", assetName: "Cool")
+        case happiest:
+            emojiSelected = Emoji(name: "Happy", assetName: "Happy")
+        default:
+            print("Unexpected error!")
+        }
+        self.performSegue(withIdentifier: "seg1", sender: self)
+    }
     
-    func buttonImages() {
+    func loadDate(){
+        let dat = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        dateFormatter.locale = Locale(identifier: "en_US")
+        dateT.text = dateFormatter.string(from: dat)
     }
     
     
