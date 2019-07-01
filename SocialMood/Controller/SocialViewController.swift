@@ -11,7 +11,42 @@ import UIKit
 class SocialViewController: UIViewController {
 
     override func viewDidLoad() {
+        
+        let mood = Mood(emojiSelected: ":)", note: "fhdjsh", socialSelected: ["fb"])
+        
+        let encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .iso8601
+        
+        do {
+            let data = try encoder.encode(mood)
+            
+            if let string = String(data: data, encoding: .utf8) {
+                print(string)
+            }
+            
+        } catch {
+            print("Error serializing JSON :", error)
+        }
+        
+        
         super.viewDidLoad()
+        
+        //        let dico = defaults.dictionaryRepresentation()
+        
+        let jsonUrlString = Bundle.main.url(forResource: "mood", withExtension: "json")
+        guard let url = jsonUrlString else { return }
+        
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        
+        do {
+            let fileData = try Data(contentsOf: url)
+            let readJson = try decoder.decode([Mood].self, from: fileData)
+            print(readJson)
+            
+        } catch {
+            print(error)
+        }
 
         // Do any additional setup after loading the view.
     }

@@ -17,6 +17,7 @@
 		838D5A8A22C64A19005661B3 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8822C64A19005661B3 /* SocialViewController.swift */; };
 		838D5A8D22C64B19005661B3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8C22C64B19005661B3 /* HistoryViewController.swift */; };
 		838D5A8F22C6699C005661B3 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838D5A8E22C6699C005661B3 /* HistoryTableViewCell.swift */; };
+		D4AED98922CA0493003E51F6 /* mood.json in Resources */ = {isa = PBXBuildFile; fileRef = D4AED98822CA0493003E51F6 /* mood.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		838D5A8822C64A19005661B3 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		838D5A8C22C64B19005661B3 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		838D5A8E22C6699C005661B3 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		D4AED98822CA0493003E51F6 /* mood.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mood.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				838D5A8022C6175E005661B3 /* Mood.swift */,
 				838D5A8222C6181A005661B3 /* Models.swift */,
+				D4AED98822CA0493003E51F6 /* mood.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4AED98922CA0493003E51F6 /* mood.json in Resources */,
 				32A1870322C615640056F549 /* LaunchScreen.storyboard in Resources */,
 				32A1870022C615640056F549 /* Assets.xcassets in Resources */,
 				32A186FE22C615640056F549 /* Main.storyboard in Resources */,
