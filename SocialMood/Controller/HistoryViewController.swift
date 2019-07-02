@@ -11,7 +11,7 @@ import UIKit
 class HistoryViewController: UIViewController, UITableViewDelegate {
     
     var tabSocial: [Social] = []
-   
+    var moodJson: [Mood]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,28 @@ class HistoryViewController: UIViewController, UITableViewDelegate {
         tabSocial.append(Social(name: "FB", assetName: "FB"))
         tabSocial.append(Social(name: "FB", assetName: "FB"))
         // Do any additional setup after loading the view.
+        
+        
+        // L'Affichage
+        let jsonUrlString = Bundle.main.url(forResource: "mood", withExtension: "json")
+        guard let url = jsonUrlString else { return }
+        
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        
+        do {
+            let fileData = try Data(contentsOf: url)
+            let readJson = try decoder.decode([Mood].self, from: fileData)
+            print("-=======- Read -=======-")
+            print(readJson)
+        
+            moodJson = readJson
+            
+        } catch {
+            print(error)
+        }
+    
+        
     }
     
     
@@ -42,7 +64,7 @@ extension HistoryViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tabSocial.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,8 +73,18 @@ extension HistoryViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.configure(emojiAsset: "Happy", emojiName: "Happy", social1Asset: "FB", social2Asset: "YT" )
+        var moodSocial = [String]()
         
+        var socialSelect = moodJson![0].socialSelected
+        
+        for social in socialSelect {
+            moodSocial.append(social)
+        }
+        
+     
+        cell.configure(emojiAsset: moodJson![0].emojiSelected, emojiName: moodJson![0].emojiSelected,
+                       socialAsset: moodSocial , note: moodJson![0].note  )
+    
         return cell
         
     }

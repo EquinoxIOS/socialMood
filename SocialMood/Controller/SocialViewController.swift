@@ -106,7 +106,7 @@ class SocialViewController: UIViewController {
         var social = [String]()
         for i in recievedEmoji.socialSelected {
             //social.append(i)
-            social = [i]
+            social.append(i)
         }
         
         let mood = Mood(emojiSelected: "\(recievedEmoji.emojiSelected)", note: recievedEmoji.note, socialSelected: social)
@@ -135,25 +135,22 @@ class SocialViewController: UIViewController {
             print("Error serializing JSON :", error)
         }
         
-        
-        
         //        let dico = defaults.dictionaryRepresentation()
-        
         //        let jsonUrlString = Bundle.main.url(forResource: "mood", withExtension: "json")
         //        guard let url = jsonUrlString else { return }
         
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
-        
-        do {
-            let fileData = try Data(contentsOf: url)
-            let readJson = try decoder.decode([Mood].self, from: fileData)
-            print("-=======- Read -=======-")
-            print(readJson)
-            
-        } catch {
-            print(error)
-        }
+//        let decoder = JSONDecoder()
+//        decoder.dateDecodingStrategy = .iso8601
+//
+//        do {
+//            let fileData = try Data(contentsOf: url)
+//            let readJson = try decoder.decode([Mood].self, from: fileData)
+//            print("-=======- Read -=======-")
+//            print(readJson)
+//
+//        } catch {
+//            print(error)
+//        }
     }
     /*
     // MARK: - Navigation

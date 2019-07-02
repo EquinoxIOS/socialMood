@@ -34,17 +34,47 @@ class HistoryTableViewCell: UITableViewCell {
     
     
     
-    func configure(emojiAsset: String, emojiName: String, social1Asset: String, note: String? = nil, social2Asset: String? = nil, social3Asset: String? = nil, social4Asset: String? = nil, social5Asset: String? = nil, social6Asset: String? = nil ) {
+    func configure(emojiAsset: String, emojiName: String, socialAsset: [String], note: String? = nil ) {
         
         emojiImageView.image = UIImage(named: emojiAsset)
         emojiLabel.text = emojiName
         noteLabel.text = note
         
-        socialImageView1.image = UIImage(named: social1Asset)
-        if let social2 = social2Asset { socialImageView2.image = UIImage(named: social2)}
-        if let social3 = social3Asset { socialImageView3.image = UIImage(named: social3)}
-        if let social4 = social4Asset { socialImageView4.image = UIImage(named: social4)}
-        if let social5 = social5Asset { socialImageView5.image = UIImage(named: social5)}
-        if let social6 = social6Asset { socialImageView6.image = UIImage(named: social6)}
+//        socialImageView1.image = UIImage(named: social1Asset)
+        
+        switch socialAsset.count {
+        case 1:
+            socialImageView1.image = UIImage(named: socialAsset[0])
+        
+        case 2:
+            socialImageView1.image = UIImage(named: socialAsset[0])
+            socialImageView2.image = UIImage(named: socialAsset[1])
+            
+        case 3:
+            socialImageView1.image = UIImage(named: socialAsset[0])
+            socialImageView2.image = UIImage(named: socialAsset[1])
+            socialImageView3.image = UIImage(named: socialAsset[2])
+        case 4:
+            socialImageView1.image = UIImage(named: socialAsset[0])
+            socialImageView2.image = UIImage(named: socialAsset[1])
+            socialImageView3.image = UIImage(named: socialAsset[2])
+            socialImageView4.image = UIImage(named: socialAsset[3])
+        case 5:
+            socialImageView1.image = UIImage(named: socialAsset[0])
+            socialImageView2.image = UIImage(named: socialAsset[1])
+            socialImageView3.image = UIImage(named: socialAsset[2])
+            socialImageView4.image = UIImage(named: socialAsset[3])
+            socialImageView5.image = UIImage(named: socialAsset[4])
+        case 6:
+            socialImageView1.image = UIImage(named: socialAsset[0])
+            socialImageView2.image = UIImage(named: socialAsset[1])
+            socialImageView3.image = UIImage(named: socialAsset[2])
+            socialImageView4.image = UIImage(named: socialAsset[3])
+            socialImageView5.image = UIImage(named: socialAsset[4])
+            socialImageView6.image = UIImage(named: socialAsset[5])
+            
+        default:
+             socialImageView1.image = UIImage(named: socialAsset[0])
+        }
     }
 }
