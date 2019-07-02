@@ -12,18 +12,18 @@
         <!--Emoji View Controller-->
         <scene sceneID="h6k-WW-mRJ">
             <objects>
-                <viewController id="7Mu-ZC-MAs" customClass="EmojiViewController" customModule="SocialMood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Mu-ZC-MAs" customClass="EmojiViewController" customModule="SocialMood" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RWX-Tc-ENk"/>
                         <viewControllerLayoutGuide type="bottom" id="VrK-ej-ReR"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7Ex-m2-uZD" customClass="View">
+                    <view key="view" contentMode="scaleToFill" id="7Ex-m2-uZD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="s0Q-Eb-ICM">
-                                <rect key="frame" x="52.666666666666657" y="138" width="309" height="65.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="55"/>
+                                <rect key="frame" x="131" y="138" width="152" height="31.333333333333343"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -107,7 +107,7 @@
         <!--Social View Controller-->
         <scene sceneID="7dt-Cs-nYi">
             <objects>
-                <viewController storyboardIdentifier="second" id="Ekh-OM-fPZ" customClass="SocialViewController" customModule="SocialMood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="second" id="Ekh-OM-fPZ" customClass="SocialViewController" customModule="SocialMood" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FMp-gJ-YA1"/>
                         <viewControllerLayoutGuide type="bottom" id="cKN-9W-cex"/>
@@ -176,7 +176,7 @@
         <!--History View Controller-->
         <scene sceneID="dol-F4-7KQ">
             <objects>
-                <viewController id="avc-ro-BNq" customClass="HistoryViewController" customModule="SocialMood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="avc-ro-BNq" customClass="HistoryViewController" customModule="SocialMood" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QZo-C1-j84"/>
                         <viewControllerLayoutGuide type="bottom" id="bGL-Kc-wug"/>

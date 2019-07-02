@@ -13,13 +13,9 @@ class EmojiViewController: UIViewController {
     @IBOutlet weak var dateT: UILabel!
     
     @IBOutlet weak var sadest: UIButton!
-    
     @IBOutlet weak var sad: UIButton!
-    
     @IBOutlet weak var neutral: UIButton!
-    
     @IBOutlet weak var happier: UIButton!
-    
     @IBOutlet weak var happiest: UIButton!
     
     @IBOutlet weak var animatingLabel: UILabel!
@@ -28,7 +24,6 @@ class EmojiViewController: UIViewController {
     var objectToSend: Mood!
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
     }
     

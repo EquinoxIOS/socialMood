@@ -12,17 +12,24 @@ class SocialViewController: UIViewController {
     var recievedEmoji: Mood!
     
     override func viewDidLoad() {
-        
-        let mood = Mood(emojiSelected: ":)", note: "fhdjsh", socialSelected: ["fb"])
+        //print(recievedEmoji.emojiSelected)
+        let mood = Mood(emojiSelected: "\(recievedEmoji.emojiSelected)", note: "\(String(describing: recievedEmoji.note))", socialSelected: ["\(String(describing: recievedEmoji.socialSelected))"])
         
         let encoder = JSONEncoder()
         encoder.dateEncodingStrategy = .iso8601
         
+        let jsonUrlString = Bundle.main.url(forResource: "mood", withExtension: "json")
+        guard let url = jsonUrlString else { return }
+        
         do {
-            let data = try encoder.encode(mood)
+            let data = try encoder.encode([mood])
             
             if let string = String(data: data, encoding: .utf8) {
-                print(string)
+                print("-=======- Write -=======-")
+                print("JSON String : " + string)
+                
+                try data.write(to: url)
+                //try string.encode(to: url as! Encoder)
             }
             
         } catch {
@@ -32,10 +39,10 @@ class SocialViewController: UIViewController {
         
         super.viewDidLoad()
         
-        //        let dico = defaults.dictionaryRepresentation()
+//        let dico = defaults.dictionaryRepresentation()
         
-        let jsonUrlString = Bundle.main.url(forResource: "mood", withExtension: "json")
-        guard let url = jsonUrlString else { return }
+//        let jsonUrlString = Bundle.main.url(forResource: "mood", withExtension: "json")
+//        guard let url = jsonUrlString else { return }
         
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
@@ -43,6 +50,7 @@ class SocialViewController: UIViewController {
         do {
             let fileData = try Data(contentsOf: url)
             let readJson = try decoder.decode([Mood].self, from: fileData)
+            print("-=======- Read -=======-")
             print(readJson)
             
         } catch {
