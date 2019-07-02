@@ -51,24 +51,31 @@ class SocialViewController: UIViewController {
     
     @IBAction func addResults(_ sender: Any) {
         if !FB.isHighlighted{
-            recievedEmoji.socialSelected?.append("FB")
+            recievedEmoji.socialSelected.append("FB")
         }
         if !INST.isHighlighted{
-            recievedEmoji.socialSelected?.append("IG")
+            recievedEmoji.socialSelected.append("IG")
         }
         if !TWT.isHighlighted{
-            recievedEmoji.socialSelected?.append("TT")
+            recievedEmoji.socialSelected.append("TT")
         }
         if !WHATS.isHighlighted{
-            recievedEmoji.socialSelected?.append("WA")
+            recievedEmoji.socialSelected.append("WA")
         }
         if !YTB.isHighlighted{
-            recievedEmoji.socialSelected?.append("YT")
+            recievedEmoji.socialSelected.append("YT")
         }
         if !SNP.isHighlighted{
-            recievedEmoji.socialSelected?.append("SC")
+            recievedEmoji.socialSelected.append("SC")
         }
-       recievedEmoji.note = textFieldNote.text
+        recievedEmoji.note = textFieldNote.text!
+        
+//        print("gsdhgfhjsdgfhgsdjhgfhjgsdhjgfjsdhfgjhsgdfh")
+//        print(recievedEmoji.note)
+//        print(recievedEmoji.socialSelected)
+//        print("gsdhgfhjsdgfhgsdjhgfhjgsdhjgfjsdhfgjhsgdfh")
+
+         testingBDD()
         performSegue(withIdentifier: "seg2", sender: self)
     }
     
@@ -85,10 +92,30 @@ class SocialViewController: UIViewController {
         WHATS.isHighlighted = true
         YTB.isHighlighted = true
         SNP.isHighlighted = true
-        let mood = Mood(emojiSelected: "\(recievedEmoji.emojiSelected)", note: "\(String(describing: recievedEmoji.note))", socialSelected: ["\(String(describing: recievedEmoji.socialSelected))"])
+        
+        super.viewDidLoad()
+       
+        
+
+        // Do any additional setup after loading the view.
+    }
+
+
+    
+    func testingBDD() {
+        var social = [String]()
+        for i in recievedEmoji.socialSelected {
+            //social.append(i)
+            social = [i]
+        }
+        
+        let mood = Mood(emojiSelected: "\(recievedEmoji.emojiSelected)", note: recievedEmoji.note, socialSelected: social)
         
         let encoder = JSONEncoder()
         encoder.dateEncodingStrategy = .iso8601
+        
+        
+        
         
         let jsonUrlString = Bundle.main.url(forResource: "mood", withExtension: "json")
         guard let url = jsonUrlString else { return }
@@ -109,12 +136,11 @@ class SocialViewController: UIViewController {
         }
         
         
-        super.viewDidLoad()
         
-//        let dico = defaults.dictionaryRepresentation()
+        //        let dico = defaults.dictionaryRepresentation()
         
-//        let jsonUrlString = Bundle.main.url(forResource: "mood", withExtension: "json")
-//        guard let url = jsonUrlString else { return }
+        //        let jsonUrlString = Bundle.main.url(forResource: "mood", withExtension: "json")
+        //        guard let url = jsonUrlString else { return }
         
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
@@ -128,11 +154,7 @@ class SocialViewController: UIViewController {
         } catch {
             print(error)
         }
-
-        // Do any additional setup after loading the view.
     }
-
-
     /*
     // MARK: - Navigation
 

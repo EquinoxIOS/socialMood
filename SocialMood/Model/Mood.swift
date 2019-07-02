@@ -26,14 +26,14 @@ import Foundation
 struct Mood: Codable {
     var emojiSelected: String
     var date: Date
-    var note: String?
-    var socialSelected: [String]?
+    var note: String = ""
+    var socialSelected: [String] = []
     
     init(emojiSelected: String, note: String?,  socialSelected: [String]?) {
         self.emojiSelected = emojiSelected
         self.date = Date()
-        self.note = note
-        self.socialSelected = socialSelected
+        self.note = note!
+        self.socialSelected = socialSelected!
     }
     
     //    init(json: [String: Any]) {

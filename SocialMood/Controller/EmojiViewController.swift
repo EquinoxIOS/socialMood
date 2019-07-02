@@ -45,19 +45,19 @@ class EmojiViewController: UIViewController {
         switch sender {
         case sadest:
             //emojiSelected = Emoji(name: "Angry", assetName: "Angry")
-            objectToSend = Mood(emojiSelected: "Angry", note: nil, socialSelected:nil)
+            objectToSend = Mood(emojiSelected: "Angry", note: "", socialSelected:[])
         case sad:
             //emojiSelected = Emoji(name: "Sad", assetName: "Sad")
-            objectToSend = Mood(emojiSelected: "Sad", note: nil, socialSelected: nil)
+            objectToSend = Mood(emojiSelected: "Sad", note: "", socialSelected: [])
         case neutral:
             //emojiSelected = Emoji(name: "Middle", assetName: "Middle")
-            objectToSend = Mood(emojiSelected: "Middle", note: nil, socialSelected: nil)
+            objectToSend = Mood(emojiSelected: "Middle", note: "", socialSelected: [])
         case happier:
             //emojiSelected = Emoji(name: "Cool", assetName: "Cool")
-            objectToSend = Mood(emojiSelected: "Cool", note: nil, socialSelected: nil)
+            objectToSend = Mood(emojiSelected: "Cool", note: "", socialSelected: [])
         case happiest:
             //emojiSelected = Emoji(name: "Happy", assetName: "Happy")
-            objectToSend = Mood(emojiSelected: "Happy", note: nil, socialSelected: nil)
+            objectToSend = Mood(emojiSelected: "Happy", note: "", socialSelected: [])
         default:
             print("Unexpected error!")
         }
