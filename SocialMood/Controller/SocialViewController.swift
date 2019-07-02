@@ -69,6 +69,7 @@ class SocialViewController: UIViewController {
             recievedEmoji.socialSelected?.append("SC")
         }
        recievedEmoji.note = textFieldNote.text
+        performSegue(withIdentifier: "seg2", sender: self)
     }
     
     
