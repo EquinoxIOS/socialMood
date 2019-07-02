@@ -31,6 +31,7 @@ class EmojiViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.animateAppName()
+        self.loadDate()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
