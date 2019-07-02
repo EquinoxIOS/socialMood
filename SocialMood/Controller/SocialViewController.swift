@@ -49,6 +49,27 @@ class SocialViewController: UIViewController {
     
     
     
+    @IBAction func addResults(_ sender: Any) {
+        if !FB.isHighlighted{
+            recievedEmoji.socialSelected?.append("FB")
+        }
+        if !INST.isHighlighted{
+            recievedEmoji.socialSelected?.append("IG")
+        }
+        if !TWT.isHighlighted{
+            recievedEmoji.socialSelected?.append("TT")
+        }
+        if !WHATS.isHighlighted{
+            recievedEmoji.socialSelected?.append("WA")
+        }
+        if !YTB.isHighlighted{
+            recievedEmoji.socialSelected?.append("YT")
+        }
+        if !SNP.isHighlighted{
+            recievedEmoji.socialSelected?.append("SC")
+        }
+       recievedEmoji.note = textFieldNote.text
+    }
     
     
     
