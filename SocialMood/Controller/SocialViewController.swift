@@ -11,8 +11,58 @@ import UIKit
 class SocialViewController: UIViewController {
     var recievedEmoji: Mood!
     
+    @IBOutlet weak var FB: UIButton!
+    @IBOutlet weak var INST: UIButton!
+    @IBOutlet weak var TWT: UIButton!
+    @IBOutlet weak var WHATS: UIButton!
+    @IBOutlet weak var YTB: UIButton!
+    @IBOutlet weak var SNP: UIButton!
+    @IBOutlet weak var textFieldNote: UITextField!
+    @IBOutlet weak var doneButton: UIButton!
+    
+    @IBAction func appBtnPressed(_ sender: UIButton) {
+        
+        switch sender {
+        case FB:
+            FB.isHighlighted = !FB.isHighlighted
+
+        case INST:
+            INST.isHighlighted = !INST.isHighlighted
+
+        case TWT:
+            TWT.isHighlighted = !TWT.isHighlighted
+        case WHATS:
+        WHATS.isHighlighted = !WHATS.isHighlighted
+        case YTB:
+        YTB.isHighlighted = !YTB.isHighlighted
+        case SNP:
+        SNP.isHighlighted = !SNP.isHighlighted
+        default:
+            print("asd")
+        }
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         //print(recievedEmoji.emojiSelected)
+        FB.isHighlighted = true
+        INST.isHighlighted = true
+        TWT.isHighlighted = true
+        WHATS.isHighlighted = true
+        YTB.isHighlighted = true
+        SNP.isHighlighted = true
         let mood = Mood(emojiSelected: "\(recievedEmoji.emojiSelected)", note: "\(String(describing: recievedEmoji.note))", socialSelected: ["\(String(describing: recievedEmoji.socialSelected))"])
         
         let encoder = JSONEncoder()

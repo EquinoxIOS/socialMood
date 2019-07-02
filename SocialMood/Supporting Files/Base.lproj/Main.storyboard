@@ -135,6 +135,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcc-LI-RK3">
                                                 <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="76.333333333333329"/>
                                                 <state key="normal" image="FB"/>
+                                                <connections>
+                                                    <action selector="appBtnPressed:" destination="Ekh-OM-fPZ" eventType="touchUpInside" id="9Fc-td-xEJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHh-uu-z7k">
                                                 <rect key="frame" x="124.66666666666666" y="0.0" width="124.66666666666666" height="76.333333333333329"/>
@@ -165,14 +168,15 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Got something to say?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KWD-U4-8sp">
-                                <rect key="frame" x="20" y="552" width="374" height="30"/>
-                                <nil key="textColor"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Got something to say?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KWD-U4-8sp">
+                                <rect key="frame" x="20" y="552" width="374" height="21"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TX-vc-Ej7">
-                                <rect key="frame" x="192" y="602" width="30" height="48"/>
+                                <rect key="frame" x="192" y="593" width="30" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="✓"/>
                             </button>
@@ -194,6 +198,16 @@
                             <constraint firstItem="4HD-Ej-Ras" firstAttribute="leading" secondItem="gbC-Ib-vQF" secondAttribute="leadingMargin" id="xcK-3v-Axm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="FB" destination="Tcc-LI-RK3" id="m3Y-hd-LNg"/>
+                        <outlet property="INST" destination="gHh-uu-z7k" id="q8g-Fe-qLn"/>
+                        <outlet property="SNP" destination="3NH-9k-I1P" id="DDt-2U-wsu"/>
+                        <outlet property="TWT" destination="dqQ-cU-5cf" id="cYG-41-BzL"/>
+                        <outlet property="WHATS" destination="ZPg-QY-cmw" id="kHP-Ca-hfs"/>
+                        <outlet property="YTB" destination="juk-S6-mds" id="Dgc-to-6o5"/>
+                        <outlet property="doneButton" destination="4TX-vc-Ej7" id="6Re-Ep-oeA"/>
+                        <outlet property="textFieldNote" destination="KWD-U4-8sp" id="ayd-os-vTB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPD-Cf-64B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
