@@ -24,7 +24,8 @@ class EmojiViewController: UIViewController {
     
     @IBOutlet weak var animatingLabel: UILabel!
     
-    var emojiSelected: Emoji!
+    //var emojiSelected: Emoji!
+    var objectToSend: Mood!
     
     override func viewDidLoad() {
         
@@ -40,22 +41,27 @@ class EmojiViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "seg1"){
             let displayVC = segue.destination as! SocialViewController
-            displayVC.recievedEmoji = emojiSelected
+            displayVC.recievedEmoji = objectToSend
         }
     }
     
     @IBAction func nextTapped(_ sender: UIButton) {
         switch sender {
         case sadest:
-            emojiSelected = Emoji(name: "Angry", assetName: "Angry")
+            //emojiSelected = Emoji(name: "Angry", assetName: "Angry")
+            objectToSend = Mood(emojiSelected: "Angry", note: nil, socialSelected:nil)
         case sad:
-            emojiSelected = Emoji(name: "Sad", assetName: "Sad")
+            //emojiSelected = Emoji(name: "Sad", assetName: "Sad")
+            objectToSend = Mood(emojiSelected: "Sad", note: nil, socialSelected: nil)
         case neutral:
-            emojiSelected = Emoji(name: "Middle", assetName: "Middle")
+            //emojiSelected = Emoji(name: "Middle", assetName: "Middle")
+            objectToSend = Mood(emojiSelected: "Middle", note: nil, socialSelected: nil)
         case happier:
-            emojiSelected = Emoji(name: "Cool", assetName: "Cool")
+            //emojiSelected = Emoji(name: "Cool", assetName: "Cool")
+            objectToSend = Mood(emojiSelected: "Cool", note: nil, socialSelected: nil)
         case happiest:
-            emojiSelected = Emoji(name: "Happy", assetName: "Happy")
+            //emojiSelected = Emoji(name: "Happy", assetName: "Happy")
+            objectToSend = Mood(emojiSelected: "Happy", note: nil, socialSelected: nil)
         default:
             print("Unexpected error!")
         }

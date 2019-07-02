@@ -9,7 +9,7 @@
 import UIKit
 
 class SocialViewController: UIViewController {
-    var recievedEmoji: Emoji!
+    var recievedEmoji: Mood!
     
     override func viewDidLoad() {
         
