@@ -22,13 +22,12 @@ class SocialViewController: UIViewController {
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var imageRecieved: UIImageView!
     
-    override func viewDidAppear(_ animated: Bool) {
-        initButtns()
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initButtns()
+        addMessage()
         imageRecieved.image = UIImage(named: recievedEmoji.emojiSelected)
         readJSON()
     }
@@ -36,11 +35,21 @@ class SocialViewController: UIViewController {
         FB.isSelected = false
         INST.isSelected = false
         YTB.isSelected = false
-        print(YTB.isSelected)
         SNP.isSelected = false
         WHATS.isSelected = false
         TWT.isSelected = false
     }
+    
+    
+    
+    @IBOutlet weak var labelMessage: UILabel!
+   
+    func addMessage()  {
+         let mood = recievedEmoji.emojiSelected.lowercased()
+        labelMessage.text = "You feel \(mood) about which one of these?"
+    }
+    
+    
     @IBAction func appBtnPressed(_ sender: UIButton) {
         
         switch sender {
