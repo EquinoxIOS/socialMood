@@ -36,9 +36,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeO-0r-8t7">
                                                 <rect key="frame" x="0.0" y="0.0" width="68.666666666666671" height="463.33333333333331"/>
                                                 <state key="normal" image="Angry"/>
-                                                <state key="disabled">
-                                                    <color key="titleShadowColor" red="1" green="0.03624573524" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
+                                                <state key="disabled" image="Angry"/>
                                                 <state key="selected">
                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -143,15 +141,15 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPg-QY-cmw">
                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="114.66666666666667"/>
-                                                <state key="normal" image="WA"/>
+                                                <state key="normal" image="WAOFF"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juk-S6-mds">
                                                 <rect key="frame" x="125" y="0.0" width="125" height="114.66666666666667"/>
-                                                <state key="normal" image="YT"/>
+                                                <state key="normal" image="YTOFF"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NH-9k-I1P">
                                                 <rect key="frame" x="250" y="0.0" width="125" height="114.66666666666667"/>
-                                                <state key="normal" image="SC"/>
+                                                <state key="normal" image="SCOFF"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -160,18 +158,18 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcc-LI-RK3">
                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="115"/>
-                                                <state key="normal" image="FB"/>
+                                                <state key="normal" image="FBOFF"/>
                                                 <connections>
                                                     <action selector="appBtnPressed:" destination="Ekh-OM-fPZ" eventType="touchUpInside" id="9Fc-td-xEJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHh-uu-z7k">
                                                 <rect key="frame" x="125" y="0.0" width="125" height="115"/>
-                                                <state key="normal" image="IG"/>
+                                                <state key="normal" image="IGOFF"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqQ-cU-5cf">
                                                 <rect key="frame" x="250" y="0.0" width="125" height="115"/>
-                                                <state key="normal" image="TT"/>
+                                                <state key="normal" image="TTOFF"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -185,6 +183,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TX-vc-Ej7">
                                         <rect key="frame" x="0.0" y="691.33333333333337" width="375" height="76.666666666666629"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="tintColor" red="0.29850965738296509" green="0.6589275598526001" blue="0.35288554430007935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="✓"/>
                                         <connections>
                                             <action selector="addResults:" destination="Ekh-OM-fPZ" eventType="touchUpInside" id="xJB-mS-v2A"/>
@@ -362,19 +361,20 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Angry" width="76" height="76"/>
-        <image name="Cool" width="76" height="76.333335876464844"/>
-        <image name="FB" width="76.333335876464844" height="76"/>
-        <image name="Happy" width="76.333335876464844" height="76.333335876464844"/>
-        <image name="IG" width="76.333335876464844" height="76.333335876464844"/>
-        <image name="Middle" width="76.333335876464844" height="76"/>
-        <image name="SC" width="76.333335876464844" height="76.333335876464844"/>
-        <image name="Sad" width="76.333335876464844" height="76"/>
-        <image name="TT" width="76.333335876464844" height="76.333335876464844"/>
-        <image name="WA" width="76" height="76.333335876464844"/>
-        <image name="YT" width="76" height="76"/>
+        <image name="Angry" width="76.333335876464844" height="76.333335876464844"/>
+        <image name="Cool" width="76.333335876464844" height="76.333335876464844"/>
+        <image name="FBOFF" width="76" height="76"/>
+        <image name="Happy" width="76" height="76.333335876464844"/>
+        <image name="IGOFF" width="76" height="76.333335876464844"/>
+        <image name="Middle" width="76" height="76.333335876464844"/>
+        <image name="SCOFF" width="76" height="76.333335876464844"/>
+        <image name="Sad" width="76" height="76.333335876464844"/>
+        <image name="TTOFF" width="76" height="76.333335876464844"/>
+        <image name="WAOFF" width="76.333335876464844" height="76.333335876464844"/>
+        <image name="YTOFF" width="76.333335876464844" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="xtb-QL-5nI"/>
         <segue reference="IQg-zc-1GN"/>
     </inferredMetricsTieBreakers>
 </document>

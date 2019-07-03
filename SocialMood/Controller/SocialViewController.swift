@@ -27,8 +27,11 @@ class SocialViewController: UIViewController {
         
         switch sender {
         case FB:
-            FB.isHighlighted.toggle()
-
+            if FB.imageView?.image == UIImage(named: "FBOFF"){
+                FB.imageView?.image = UIImage(named: "FB")
+            } else {
+                FB.imageView?.image = UIImage(named: "FBOFF")
+            }
         case INST:
             INST.isHighlighted = !INST.isHighlighted
 
@@ -89,12 +92,12 @@ class SocialViewController: UIViewController {
     
     override func viewDidLoad() {
         //print(recievedEmoji.emojiSelected)
-        FB.isHighlighted = true
-        INST.isHighlighted = true
-        TWT.isHighlighted = true
-        WHATS.isHighlighted = true
-        YTB.isHighlighted = true
-        SNP.isHighlighted = true
+        FB.imageView?.image = #imageLiteral(resourceName: "FBOFF")
+        INST.imageView?.image = UIImage(named: "IGOFF")
+        TWT.imageView?.image = UIImage(named: "TTOFF")
+        WHATS.imageView?.image = UIImage(named: "WAOFF")
+        YTB.imageView?.image = UIImage(named: "YTOFF")
+        SNP.imageView?.image = UIImage(named: "SCOFF")
         
         super.viewDidLoad()
         imageFromLast.image = UIImage(named: recievedEmoji.emojiSelected)
