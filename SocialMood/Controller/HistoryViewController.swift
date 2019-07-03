@@ -36,7 +36,17 @@ extension HistoryViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-       return groupedMood[section].key
+       
+        
+        
+        if groupedMood[section].key == Date().dayString {
+            return "Today"
+        }
+        else{
+            return groupedMood[section].key
+        }
+        
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

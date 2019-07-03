@@ -10,7 +10,7 @@ import UIKit
 
 class HistoryTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var hourLabel: UILabel!
+ 
     @IBOutlet weak var emojiImageView: UIImageView!
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var noteLabel: UILabel!
@@ -43,17 +43,13 @@ class HistoryTableViewCell: UITableViewCell {
         emojiLabel.text = emojiName
         noteLabel.text = note
         let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .none
+        dateFormatter.dateStyle = .none
+        dateFormatter.timeStyle = .short
         dateFormatter.locale = Locale(identifier: "en_US")
         
-        let hourFormatter = DateFormatter()
-        hourFormatter.dateStyle = .none
-        hourFormatter.timeStyle = .short
-        hourFormatter.locale = Locale(identifier: "en_US")
         
         dateLabel.text = dateFormatter.string(from: date)
-        hourLabel.text = hourFormatter.string(from: date)
+ 
         
         switch socialAsset.count {
         case 1:

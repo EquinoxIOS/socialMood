@@ -270,9 +270,9 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Q3H-4C-Tdw">
-                                                            <rect key="frame" x="105" y="56" width="289" height="21"/>
+                                                            <rect key="frame" x="105" y="59" width="289" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -311,20 +311,12 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.30000001192092896" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e0d-qt-y9D">
-                                                            <rect key="frame" x="325" y="27" width="69" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                     </subviews>
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="dateLabel" destination="IwP-y5-Czc" id="M08-Jk-Tmf"/>
                                                     <outlet property="emojiImageView" destination="lkh-9Y-NxC" id="grj-Sk-o5b"/>
                                                     <outlet property="emojiLabel" destination="KAn-sp-52z" id="RCd-Qu-etz"/>
-                                                    <outlet property="hourLabel" destination="e0d-qt-y9D" id="cZq-KZ-NgR"/>
                                                     <outlet property="noteLabel" destination="Q3H-4C-Tdw" id="1MM-cn-S8A"/>
                                                     <outlet property="socialImageView1" destination="u3L-p1-HRP" id="QqU-63-bUU"/>
                                                     <outlet property="socialImageView2" destination="hA3-L2-Xm7" id="xwW-1g-nsy"/>
