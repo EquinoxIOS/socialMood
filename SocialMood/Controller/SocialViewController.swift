@@ -22,9 +22,7 @@ class SocialViewController: UIViewController {
     @IBOutlet weak var doneButton: UIButton!
     
     @IBAction func appBtnPressed(_ sender: UIButton) {
-        
-        
-        
+
         switch sender {
         case FB:
             if !FB.isSelected{
@@ -119,8 +117,8 @@ class SocialViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        imageFromLast.image = UIImage(named: recievedEmoji.emojiSelected)
         
+        imageFromLast.image = UIImage(named: recievedEmoji.emojiSelected)
         initButtns()
         // Do any additional setup after loading the view.
     }
