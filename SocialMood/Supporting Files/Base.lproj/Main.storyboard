@@ -142,14 +142,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPg-QY-cmw">
                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="114.66666666666667"/>
                                                 <state key="normal" image="WAOFF"/>
+                                                <connections>
+                                                    <action selector="appBtnPressed:" destination="Ekh-OM-fPZ" eventType="touchUpInside" id="wVb-iT-GqU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juk-S6-mds">
                                                 <rect key="frame" x="125" y="0.0" width="125" height="114.66666666666667"/>
                                                 <state key="normal" image="YTOFF"/>
+                                                <connections>
+                                                    <action selector="appBtnPressed:" destination="Ekh-OM-fPZ" eventType="touchUpInside" id="2Sz-7S-cME"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NH-9k-I1P">
                                                 <rect key="frame" x="250" y="0.0" width="125" height="114.66666666666667"/>
                                                 <state key="normal" image="SCOFF"/>
+                                                <connections>
+                                                    <action selector="appBtnPressed:" destination="Ekh-OM-fPZ" eventType="touchUpInside" id="Vcd-Fe-hbO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -159,6 +168,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcc-LI-RK3">
                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="115"/>
                                                 <state key="normal" image="FBOFF"/>
+                                                <state key="selected" image="FB"/>
+                                                <state key="highlighted" image="FB"/>
                                                 <connections>
                                                     <action selector="appBtnPressed:" destination="Ekh-OM-fPZ" eventType="touchUpInside" id="9Fc-td-xEJ"/>
                                                 </connections>
@@ -166,10 +177,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHh-uu-z7k">
                                                 <rect key="frame" x="125" y="0.0" width="125" height="115"/>
                                                 <state key="normal" image="IGOFF"/>
+                                                <connections>
+                                                    <action selector="appBtnPressed:" destination="Ekh-OM-fPZ" eventType="touchUpInside" id="PTv-Fc-5E3"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqQ-cU-5cf">
                                                 <rect key="frame" x="250" y="0.0" width="125" height="115"/>
                                                 <state key="normal" image="TTOFF"/>
+                                                <connections>
+                                                    <action selector="appBtnPressed:" destination="Ekh-OM-fPZ" eventType="touchUpInside" id="weL-Zy-UMd"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -363,6 +380,7 @@
     <resources>
         <image name="Angry" width="76.333335876464844" height="76.333335876464844"/>
         <image name="Cool" width="76.333335876464844" height="76.333335876464844"/>
+        <image name="FB" width="76" height="76.333335876464844"/>
         <image name="FBOFF" width="76" height="76"/>
         <image name="Happy" width="76" height="76.333335876464844"/>
         <image name="IGOFF" width="76" height="76.333335876464844"/>

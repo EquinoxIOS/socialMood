@@ -27,22 +27,55 @@ class SocialViewController: UIViewController {
         
         switch sender {
         case FB:
-            if FB.imageView?.image == UIImage(named: "FBOFF"){
-                FB.imageView?.image = UIImage(named: "FB")
+            if !FB.isSelected{
+                FB.setImage(#imageLiteral(resourceName: "FB"), for: .normal)
+                FB.isSelected = true
             } else {
-                FB.imageView?.image = UIImage(named: "FBOFF")
+                FB.setImage(#imageLiteral(resourceName: "FBOFF"), for: .normal)
+                FB.isSelected = false
             }
+            
         case INST:
-            INST.isHighlighted = !INST.isHighlighted
-
+            if !INST.isSelected{
+                INST.setImage(#imageLiteral(resourceName: "IG"), for: .normal)
+                INST.isSelected = true
+            } else {
+                INST.setImage(#imageLiteral(resourceName: "IGOFF"), for: .normal)
+                INST.isSelected = false
+            }
+            
         case TWT:
-            TWT.isHighlighted = !TWT.isHighlighted
+            if !TWT.isSelected{
+                TWT.setImage(#imageLiteral(resourceName: "TT"), for: .normal)
+                TWT.isSelected = true
+            } else {
+                TWT.setImage(#imageLiteral(resourceName: "TTOFF"), for: .normal)
+                TWT.isSelected = false
+            }
         case WHATS:
-        WHATS.isHighlighted = !WHATS.isHighlighted
+            if !WHATS.isSelected{
+                WHATS.setImage(#imageLiteral(resourceName: "WA"), for: .normal)
+                WHATS.isSelected = true
+            } else {
+                WHATS.setImage(#imageLiteral(resourceName: "WAOFF"), for: .normal)
+                WHATS.isSelected = false
+            }
         case YTB:
-        YTB.isHighlighted = !YTB.isHighlighted
+            if !YTB.isSelected{
+                YTB.setImage(#imageLiteral(resourceName: "YT"), for: .normal)
+                YTB.isSelected = true
+            } else {
+                YTB.setImage(#imageLiteral(resourceName: "YTOFF"), for: .normal)
+                YTB.isSelected = false
+            }
         case SNP:
-        SNP.isHighlighted = !SNP.isHighlighted
+            if !SNP.isSelected{
+                SNP.setImage(#imageLiteral(resourceName: "SC"), for: .normal)
+                SNP.isSelected = true
+            } else {
+                SNP.setImage(#imageLiteral(resourceName: "SCOFF"), for: .normal)
+                SNP.isSelected = false
+            }
         default:
             print("asd")
         }
@@ -51,37 +84,30 @@ class SocialViewController: UIViewController {
         
     }
     
-    
-    
-    
+ 
     
     @IBAction func addResults(_ sender: Any) {
-        if !FB.isHighlighted{
+        if FB.isSelected{
             recievedEmoji.socialSelected.append("FB")
         }
-        if !INST.isHighlighted{
+        if INST.isSelected{
             recievedEmoji.socialSelected.append("IG")
         }
-        if !TWT.isHighlighted{
+        if TWT.isSelected{
             recievedEmoji.socialSelected.append("TT")
         }
-        if !WHATS.isHighlighted{
+        if WHATS.isSelected{
             recievedEmoji.socialSelected.append("WA")
         }
-        if !YTB.isHighlighted{
+        if YTB.isSelected{
             recievedEmoji.socialSelected.append("YT")
         }
-        if !SNP.isHighlighted{
+        if SNP.isSelected{
             recievedEmoji.socialSelected.append("SC")
         }
         recievedEmoji.note = textFieldNote.text!
         
-//        print("gsdhgfhjsdgfhgsdjhgfhjgsdhjgfjsdhfgjhsgdfh")
-//        print(recievedEmoji.note)
-//        print(recievedEmoji.socialSelected)
-//        print("gsdhgfhjsdgfhgsdjhgfhjgsdhjgfjsdhfgjhsgdfh")
-
-         testingBDD()
+        testingBDD()
         performSegue(withIdentifier: "seg2", sender: self)
     }
     
@@ -91,22 +117,15 @@ class SocialViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        //print(recievedEmoji.emojiSelected)
-        FB.imageView?.image = #imageLiteral(resourceName: "FBOFF")
-        INST.imageView?.image = UIImage(named: "IGOFF")
-        TWT.imageView?.image = UIImage(named: "TTOFF")
-        WHATS.imageView?.image = UIImage(named: "WAOFF")
-        YTB.imageView?.image = UIImage(named: "YTOFF")
-        SNP.imageView?.image = UIImage(named: "SCOFF")
         
         super.viewDidLoad()
         imageFromLast.image = UIImage(named: recievedEmoji.emojiSelected)
         
-
+        initButtns()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
     
     func testingBDD() {
         var social = [String]()
@@ -145,27 +164,34 @@ class SocialViewController: UIViewController {
         //        let jsonUrlString = Bundle.main.url(forResource: "mood", withExtension: "json")
         //        guard let url = jsonUrlString else { return }
         
-//        let decoder = JSONDecoder()
-//        decoder.dateDecodingStrategy = .iso8601
-//
-//        do {
-//            let fileData = try Data(contentsOf: url)
-//            let readJson = try decoder.decode([Mood].self, from: fileData)
-//            print("-=======- Read -=======-")
-//            print(readJson)
-//
-//        } catch {
-//            print(error)
-//        }
+        //        let decoder = JSONDecoder()
+        //        decoder.dateDecodingStrategy = .iso8601
+        //
+        //        do {
+        //            let fileData = try Data(contentsOf: url)
+        //            let readJson = try decoder.decode([Mood].self, from: fileData)
+        //            print("-=======- Read -=======-")
+        //            print(readJson)
+        //
+        //        } catch {
+        //            print(error)
+        //        }
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    func initButtns() {
+        FB.isSelected = false
+        INST.isSelected = false
+        YTB.isSelected = false
+        SNP.isSelected = false
+        WHATS.isSelected = false
+        TWT.isSelected = false
     }
-    */
-
 }
