@@ -54,7 +54,6 @@ class HistoryTableViewCell: UITableViewCell {
         
         dateLabel.text = dateFormatter.string(from: date)
         hourLabel.text = hourFormatter.string(from: date)
-        //        socialImageView1.image = UIImage(named: social1Asset)
         
         switch socialAsset.count {
         case 1:
