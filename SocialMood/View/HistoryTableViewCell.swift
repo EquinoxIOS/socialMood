@@ -74,7 +74,7 @@ class HistoryTableViewCell: UITableViewCell {
             socialImageView6.image = UIImage(named: socialAsset[5])
             
         default:
-             socialImageView1.image = UIImage(named: socialAsset[0])
+            print("Fatal error!")
         }
     }
 }

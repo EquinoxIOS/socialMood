@@ -11,6 +11,7 @@ import UIKit
 class SocialViewController: UIViewController {
     var recievedEmoji: Mood!
     
+    @IBOutlet weak var imageFromLast: UIImageView!
     @IBOutlet weak var FB: UIButton!
     @IBOutlet weak var INST: UIButton!
     @IBOutlet weak var TWT: UIButton!
@@ -22,9 +23,11 @@ class SocialViewController: UIViewController {
     
     @IBAction func appBtnPressed(_ sender: UIButton) {
         
+        
+        
         switch sender {
         case FB:
-            FB.isHighlighted = !FB.isHighlighted
+            FB.isHighlighted.toggle()
 
         case INST:
             INST.isHighlighted = !INST.isHighlighted
@@ -94,7 +97,7 @@ class SocialViewController: UIViewController {
         SNP.isHighlighted = true
         
         super.viewDidLoad()
-       
+        imageFromLast.image = UIImage(named: recievedEmoji.emojiSelected)
         
 
         // Do any additional setup after loading the view.
