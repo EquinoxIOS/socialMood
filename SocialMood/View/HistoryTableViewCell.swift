@@ -41,7 +41,11 @@ class HistoryTableViewCell: UITableViewCell {
         emojiImageView.image = UIImage(named: emojiAsset)
         emojiLabel.text = emojiName
         noteLabel.text = note
-        dateLabel.text = date.description
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        dateFormatter.locale = Locale(identifier: "en_US")
+        dateLabel.text = dateFormatter.string(from: date)
         
         //        socialImageView1.image = UIImage(named: social1Asset)
         
