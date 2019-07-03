@@ -46,7 +46,8 @@ class SocialViewController: UIViewController {
    
     func addMessage()  {
 //         let mood = recievedEmoji.emojiSelected.lowercased()
-        labelMessage.text = "What have you been upto?"
+        let mood = recievedEmoji.emojiSelected.lowercased()
+        labelMessage.text = "You feel \(mood) about which one of these?"
     }
     
     

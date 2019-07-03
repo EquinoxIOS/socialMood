@@ -16,12 +16,18 @@ class HistoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        moods.sort{
+            $0.date > $1.date
+        }
+        
         //        tabSocial.append(Social(name: "FB", assetName: "FB"))
         //        tabSocial.append(Social(name: "FB", assetName: "FB"))
     }
 }
 
 extension HistoryViewController: UITableViewDataSource {
+    
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
