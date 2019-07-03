@@ -20,56 +20,107 @@ class SocialViewController: UIViewController {
     @IBOutlet weak var SNP: UIButton!
     @IBOutlet weak var textFieldNote: UITextField!
     @IBOutlet weak var doneButton: UIButton!
+    @IBOutlet weak var imageRecieved: UIImageView!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        initButtns()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("BEFORE Read", moods.count)
+        initButtns()
+        imageRecieved.image = UIImage(named: recievedEmoji.emojiSelected)
         readJSON()
-        print("AFTER Read", moods.count)
-        
-        FB.isHighlighted = true
-        INST.isHighlighted = true
-        TWT.isHighlighted = true
-        WHATS.isHighlighted = true
-        YTB.isHighlighted = true
-        SNP.isHighlighted = true
     }
-    
+    func initButtns() {
+        FB.isSelected = false
+        INST.isSelected = false
+        YTB.isSelected = false
+        print(YTB.isSelected)
+        SNP.isSelected = false
+        WHATS.isSelected = false
+        TWT.isSelected = false
+    }
     @IBAction func appBtnPressed(_ sender: UIButton) {
         
         switch sender {
-        case FB:    FB.isHighlighted = !FB.isHighlighted
-        case INST:  INST.isHighlighted = !INST.isHighlighted
-        case TWT:   TWT.isHighlighted = !TWT.isHighlighted
-        case WHATS: WHATS.isHighlighted = !WHATS.isHighlighted
-        case YTB:   YTB.isHighlighted = !YTB.isHighlighted
-        case SNP:   SNP.isHighlighted = !SNP.isHighlighted
+        case FB:
+            if !FB.isSelected{
+                FB.setImage(#imageLiteral(resourceName: "FB"), for: .normal)
+                FB.isSelected = true
+            } else {
+                FB.setImage(#imageLiteral(resourceName: "FBOFF"), for: .normal)
+                FB.isSelected = false
+            }
+            
+        case INST:
+            if !INST.isSelected{
+                INST.setImage(#imageLiteral(resourceName: "IG"), for: .normal)
+                INST.isSelected = true
+            } else {
+                INST.setImage(#imageLiteral(resourceName: "IGOFF"), for: .normal)
+                INST.isSelected = false
+            }
+            
+        case TWT:
+            if !TWT.isSelected{
+                TWT.setImage(#imageLiteral(resourceName: "TT"), for: .normal)
+                TWT.isSelected = true
+            } else {
+                TWT.setImage(#imageLiteral(resourceName: "TTOFF"), for: .normal)
+                TWT.isSelected = false
+            }
+        case WHATS:
+            if !WHATS.isSelected{
+                WHATS.setImage(#imageLiteral(resourceName: "WA"), for: .normal)
+                WHATS.isSelected = true
+            } else {
+                WHATS.setImage(#imageLiteral(resourceName: "WAOFF"), for: .normal)
+                WHATS.isSelected = false
+            }
+        case YTB:
+            if !YTB.isSelected{
+                YTB.setImage(#imageLiteral(resourceName: "YT"), for: .normal)
+                YTB.isSelected = true
+            } else {
+                YTB.setImage(#imageLiteral(resourceName: "YTOFF"), for: .normal)
+                YTB.isSelected = false
+            }
+        case SNP:
+            if !SNP.isSelected{
+                SNP.setImage(#imageLiteral(resourceName: "SC"), for: .normal)
+                SNP.isSelected = true
+            } else {
+                SNP.setImage(#imageLiteral(resourceName: "SCOFF"), for: .normal)
+                SNP.isSelected = false
+            }
         default:
             print("asd")
         }
     }
     
     @IBAction func addResults(_ sender: Any) {
-        if !FB.isHighlighted{
+        if FB.isSelected{
             recievedEmoji.socialSelected.append("FB")
         }
-        if !INST.isHighlighted{
+        if INST.isSelected{
             recievedEmoji.socialSelected.append("IG")
         }
-        if !TWT.isHighlighted{
+        if TWT.isSelected{
             recievedEmoji.socialSelected.append("TT")
         }
-        if !WHATS.isHighlighted{
+        if WHATS.isSelected{
             recievedEmoji.socialSelected.append("WA")
         }
-        if !YTB.isHighlighted{
+        if YTB.isSelected{
             recievedEmoji.socialSelected.append("YT")
         }
-        if !SNP.isHighlighted{
+        if SNP.isSelected{
             recievedEmoji.socialSelected.append("SC")
         }
         recievedEmoji.note = textFieldNote.text!
+        //testingBDD()
+        //        performSegue(withIdentifier: "seg2", sender: self)
         
         createMood()
     }
@@ -131,7 +182,7 @@ class SocialViewController: UIViewController {
         encoder.dateEncodingStrategy = .iso8601
         
         do {
-            var data = try encoder.encode(moods)
+            let data = try encoder.encode(moods)
             
             if let string = String(data: data, encoding: .utf8) {
                 print("-=======- Write -=======-")
