@@ -18,6 +18,8 @@ class HistoryTableViewCell: UITableViewCell {
     @IBOutlet weak var socialImageView3: UIImageView!
     @IBOutlet weak var socialImageView4: UIImageView!
     @IBOutlet weak var socialImageView5: UIImageView!
+    @IBOutlet weak var dateLabel: UILabel!
+    
     @IBOutlet weak var socialImageView6: UIImageView!
     
     override func awakeFromNib() {
@@ -34,18 +36,19 @@ class HistoryTableViewCell: UITableViewCell {
     
     
     
-    func configure(emojiAsset: String, emojiName: String, socialAsset: [String], note: String? = nil ) {
+    func configure(emojiAsset: String, emojiName: String, socialAsset: [String], note: String? = nil, date: Date) {
         
         emojiImageView.image = UIImage(named: emojiAsset)
         emojiLabel.text = emojiName
         noteLabel.text = note
+        dateLabel.text = date.description
         
-//        socialImageView1.image = UIImage(named: social1Asset)
+        //        socialImageView1.image = UIImage(named: social1Asset)
         
         switch socialAsset.count {
         case 1:
             socialImageView1.image = UIImage(named: socialAsset[0])
-        
+            
         case 2:
             socialImageView1.image = UIImage(named: socialAsset[0])
             socialImageView2.image = UIImage(named: socialAsset[1])
@@ -74,7 +77,7 @@ class HistoryTableViewCell: UITableViewCell {
             socialImageView6.image = UIImage(named: socialAsset[5])
             
         default:
-            print("Fatal error!")
+            print("no value")
         }
     }
 }
