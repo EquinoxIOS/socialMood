@@ -508,7 +508,7 @@ class AutoEmojiViewController: UIViewController, AVCaptureVideoDataOutputSampleB
                     objectToSend = Mood(emojiSelected: "Happy", note: "", socialSelected: [])
                    
                         
-                    em.setImage(#imageLiteral(resourceName: "Happy@5x") , for: .normal)
+                    em.setImage(#imageLiteral(resourceName: "Happy@5x.png") , for: .normal)
                    
                     
                     
@@ -516,7 +516,7 @@ class AutoEmojiViewController: UIViewController, AVCaptureVideoDataOutputSampleB
                     print("Happy")
                     
                   objectToSend = Mood(emojiSelected: "Cool", note: "", socialSelected: [])
-                    em.setImage(#imageLiteral(resourceName: "Cool@5x"), for: .normal)
+                    em.setImage(#imageLiteral(resourceName: "Happy@5x.png"), for: .normal)
                     
                     } }
                 else if (outerLips9.y + 0.015 < innerLips5.y && outerLips5.y + 0.015 < innerLips3.y  ) {
@@ -524,7 +524,7 @@ class AutoEmojiViewController: UIViewController, AVCaptureVideoDataOutputSampleB
                     
                     objectToSend = Mood(emojiSelected: "Sad", note: "", socialSelected: [])
             
-                    em.setImage(#imageLiteral(resourceName: "Sad"), for: .normal)
+                    em.setImage(#imageLiteral(resourceName: "Sad@5x.png"), for: .normal)
                   
                     
                 }
@@ -534,7 +534,7 @@ class AutoEmojiViewController: UIViewController, AVCaptureVideoDataOutputSampleB
                     
                     objectToSend = Mood(emojiSelected: "Middle", note: "", socialSelected: [])
                     
-                     em.setImage(#imageLiteral(resourceName: "Middle@5x"), for: .normal)
+                     em.setImage(#imageLiteral(resourceName: "Middle@5x.png"), for: .normal)
                     
                 }
                 
