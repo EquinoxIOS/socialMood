@@ -8,10 +8,11 @@
 
 import UIKit
 
-class SocialViewController: UIViewController {
+class SocialViewController: UIViewController,UITextFieldDelegate {
     var recievedEmoji: Mood!
     var moods: [Mood] = []
     
+    @IBOutlet weak var SCRL: UIScrollView!
     @IBOutlet weak var FB: UIButton!
     @IBOutlet weak var INST: UIButton!
     @IBOutlet weak var TWT: UIButton!
@@ -22,7 +23,9 @@ class SocialViewController: UIViewController {
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var imageRecieved: UIImageView!
     
-    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+//    SCRL.setContentOffset(CGPointMake(0,250), animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

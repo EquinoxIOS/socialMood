@@ -17,14 +17,23 @@ class EmojiViewController: UIViewController {
     @IBOutlet weak var neutral: UIButton!
     @IBOutlet weak var happier: UIButton!
     @IBOutlet weak var happiest: UIButton!
-    
     @IBOutlet weak var animatingLabel: UILabel!
+    
+    let toto = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(nextTapped))
+    //let camBtn: UIBarButtonItem? = UIBarButtonItem(title: "📷", style: .plain, target: self, action: #selector(nextTapped))
     
     //var emojiSelected: Emoji!
     var objectToSend: Mood!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(nextTapped))
+//        let play = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(nextTapped))
+        
+//        navigationItem.rightBarButtonItems = [add, play]
+//
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(nextTapped))
     }
     
     
@@ -32,8 +41,11 @@ class EmojiViewController: UIViewController {
         super.viewDidAppear(animated)
         self.animateAppName()
         self.loadDate()
+        self.navigationItem.rightBarButtonItem = toto
     }
-    
+    @IBAction func tt(_ sender: UINavigationItem) {
+        print("works")
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "seg1"){
             let displayVC = segue.destination as! SocialViewController
