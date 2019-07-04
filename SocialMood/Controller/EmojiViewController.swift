@@ -18,8 +18,12 @@ class EmojiViewController: UIViewController {
     @IBOutlet weak var happier: UIButton!
     @IBOutlet weak var happiest: UIButton!
     @IBOutlet weak var animatingLabel: UILabel!
+    @IBOutlet weak var camBtn: UIBarButtonItem!
     
-    let toto = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(nextTapped))
+    @IBAction func passF(_ sender: Any) {
+        performSegue(withIdentifier: "seg3", sender: self)
+    }
+    
     //let camBtn: UIBarButtonItem? = UIBarButtonItem(title: "📷", style: .plain, target: self, action: #selector(nextTapped))
     
     //var emojiSelected: Emoji!
@@ -41,11 +45,16 @@ class EmojiViewController: UIViewController {
         super.viewDidAppear(animated)
         self.animateAppName()
         self.loadDate()
-        self.navigationItem.rightBarButtonItem = toto
+        
+        
     }
-    @IBAction func tt(_ sender: UINavigationItem) {
-        print("works")
-    }
+    
+    
+    
+    
+//    @IBAction func tt( sender: toto) {
+//        performSegue(withIdentifier: "seg3", sender: self)
+//    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "seg1"){
             let displayVC = segue.destination as! SocialViewController

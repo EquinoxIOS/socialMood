@@ -94,10 +94,17 @@
                             <constraint firstItem="cyk-aE-xyX" firstAttribute="leading" secondItem="QZE-C7-1wS" secondAttribute="leadingMargin" id="jfH-hf-GJY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="m9k-Yp-oe8"/>
+                    <navigationItem key="navigationItem" id="m9k-Yp-oe8">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="camera" id="UEY-1V-7fP">
+                            <connections>
+                                <action selector="passF:" destination="bPu-BX-fQM" id="IDJ-b4-oXb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="Sadest" destination="pQt-Nf-1uY" id="eCa-3Y-yt6"/>
                         <outlet property="animatingLabel" destination="3PA-wv-Y3e" id="L9b-v7-zkB"/>
+                        <outlet property="camBtn" destination="UEY-1V-7fP" id="S04-TC-1wh"/>
                         <outlet property="dateT" destination="aRT-lc-0Kk" id="MCM-Gp-EhF"/>
                         <outlet property="happier" destination="qbO-X3-iB4" id="mCS-kN-yI6"/>
                         <outlet property="happiest" destination="YTa-Ru-FJw" id="8ro-my-Qst"/>
@@ -105,11 +112,12 @@
                         <outlet property="sad" destination="dsF-i1-kSm" id="TQX-df-ctw"/>
                         <outlet property="sadest" destination="pQt-Nf-1uY" id="d4g-2w-1B3"/>
                         <segue destination="8DB-k6-xzD" kind="show" identifier="seg1" id="yq3-IL-awz"/>
+                        <segue destination="IFe-EY-sjo" kind="show" identifier="seg3" id="OyU-Bm-iOR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wjW-wh-iIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128.985507246377" y="-68.303571428571431"/>
+            <point key="canvasLocation" x="884" y="-48"/>
         </scene>
         <!--Social View Controller-->
         <scene sceneID="7hq-zl-Gfj">
@@ -241,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bnc-im-pEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1931.8840579710147" y="-69.642857142857139"/>
+            <point key="canvasLocation" x="1746" y="-48"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="Pf7-6E-pcV">
@@ -363,7 +371,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FH5-rb-nWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624.63768115942037" y="623.4375"/>
+            <point key="canvasLocation" x="1461" y="692"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jUG-F8-EYJ">
@@ -383,6 +391,44 @@
             </objects>
             <point key="canvasLocation" x="28" y="-141"/>
         </scene>
+        <!--Auto Emoji View Controller-->
+        <scene sceneID="Yln-qK-Wfa">
+            <objects>
+                <viewController id="IFe-EY-sjo" customClass="AutoEmojiViewController" customModule="SocialMood" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VJn-hS-WMW"/>
+                        <viewControllerLayoutGuide type="bottom" id="K0z-qi-LBP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qk5-Gx-Slm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKR-X9-DCh">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="emojiSelected:" destination="IFe-EY-sjo" eventType="touchUpInside" id="FCB-tA-81b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hKR-X9-DCh" firstAttribute="leading" secondItem="qk5-Gx-Slm" secondAttribute="leadingMargin" id="83B-Rx-Uxw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hKR-X9-DCh" secondAttribute="trailing" id="EX1-8q-56O"/>
+                            <constraint firstItem="K0z-qi-LBP" firstAttribute="top" secondItem="hKR-X9-DCh" secondAttribute="bottom" id="O48-FV-cWw"/>
+                            <constraint firstItem="hKR-X9-DCh" firstAttribute="top" secondItem="VJn-hS-WMW" secondAttribute="bottom" id="yZ0-or-JJF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="em" destination="hKR-X9-DCh" id="u9z-xy-fad"/>
+                        <outlet property="emojiButton" destination="hKR-X9-DCh" id="Dsm-Dm-zdr"/>
+                        <segue destination="8DB-k6-xzD" kind="show" identifier="seg2" id="Tb4-K5-dmx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGv-Gp-Vc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1729" y="-815"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Angry" width="76" height="76"/>
@@ -398,4 +444,7 @@
         <image name="WAOFF" width="76" height="76"/>
         <image name="YTOFF" width="76" height="76"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Tb4-K5-dmx"/>
+    </inferredMetricsTieBreakers>
 </document>
