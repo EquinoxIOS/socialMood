@@ -12,7 +12,9 @@ class SocialViewController: UIViewController,UITextFieldDelegate {
     var recievedEmoji: Mood!
     var moods: [Mood] = []
     
-    @IBOutlet weak var SCRL: UIScrollView!
+    @IBOutlet weak var doneBTN: UIBarButtonItem!
+
+    
     @IBOutlet weak var FB: UIButton!
     @IBOutlet weak var INST: UIButton!
     @IBOutlet weak var TWT: UIButton!
@@ -26,6 +28,34 @@ class SocialViewController: UIViewController,UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
 //    SCRL.setContentOffset(CGPointMake(0,250), animated: true)
     }
+    
+    @IBAction func pressedDone(_ sender: Any) {
+        if FB.isSelected{
+            recievedEmoji.socialSelected.append("FB")
+        }
+        if INST.isSelected{
+            recievedEmoji.socialSelected.append("IG")
+        }
+        if TWT.isSelected{
+            recievedEmoji.socialSelected.append("TT")
+        }
+        if WHATS.isSelected{
+            recievedEmoji.socialSelected.append("WA")
+        }
+        if YTB.isSelected{
+            recievedEmoji.socialSelected.append("YT")
+        }
+        if SNP.isSelected{
+            recievedEmoji.socialSelected.append("SC")
+        }
+        recievedEmoji.note = textFieldNote.text!
+        //testingBDD()
+        //        performSegue(withIdentifier: "seg2", sender: self)
+        
+        createMood()
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,8 +79,7 @@ class SocialViewController: UIViewController,UITextFieldDelegate {
    
     func addMessage()  {
 //         let mood = recievedEmoji.emojiSelected.lowercased()
-        let mood = recievedEmoji.emojiSelected.lowercased()
-        labelMessage.text = "You feel \(mood) about which one of these?"
+        labelMessage.text = "What yo've been upto?"
     }
     
     
@@ -112,31 +141,7 @@ class SocialViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
-    @IBAction func addResults(_ sender: Any) {
-        if FB.isSelected{
-            recievedEmoji.socialSelected.append("FB")
-        }
-        if INST.isSelected{
-            recievedEmoji.socialSelected.append("IG")
-        }
-        if TWT.isSelected{
-            recievedEmoji.socialSelected.append("TT")
-        }
-        if WHATS.isSelected{
-            recievedEmoji.socialSelected.append("WA")
-        }
-        if YTB.isSelected{
-            recievedEmoji.socialSelected.append("YT")
-        }
-        if SNP.isSelected{
-            recievedEmoji.socialSelected.append("SC")
-        }
-        recievedEmoji.note = textFieldNote.text!
-        //testingBDD()
-        //        performSegue(withIdentifier: "seg2", sender: self)
-        
-        createMood()
-    }
+
     
     
     
