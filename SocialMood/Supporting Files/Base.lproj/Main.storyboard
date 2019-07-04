@@ -21,6 +21,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScreenSocial" translatesAutoresizingMaskIntoConstraints="NO" id="KUo-zZ-Krj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cyk-aE-xyX">
                                 <rect key="frame" x="20" y="88" width="374" height="774"/>
                                 <subviews>
@@ -89,9 +92,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cyk-aE-xyX" firstAttribute="top" secondItem="05z-kg-sIV" secondAttribute="bottom" id="FJK-BN-AZn"/>
+                            <constraint firstItem="KUo-zZ-Krj" firstAttribute="top" secondItem="QZE-C7-1wS" secondAttribute="top" constant="88" id="Fe9-tC-7on"/>
                             <constraint firstItem="7AZ-5W-85R" firstAttribute="top" secondItem="cyk-aE-xyX" secondAttribute="bottom" id="Hdj-cr-3gD"/>
+                            <constraint firstItem="KUo-zZ-Krj" firstAttribute="top" secondItem="QZE-C7-1wS" secondAttribute="top" id="VRZ-d1-b5A"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cyk-aE-xyX" secondAttribute="trailing" id="Ve8-ei-REk"/>
+                            <constraint firstItem="7AZ-5W-85R" firstAttribute="top" secondItem="KUo-zZ-Krj" secondAttribute="bottom" id="ZKn-at-idB"/>
+                            <constraint firstAttribute="bottom" secondItem="KUo-zZ-Krj" secondAttribute="bottom" id="aND-IY-wZT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KUo-zZ-Krj" secondAttribute="trailing" id="fam-Hi-Ghr"/>
+                            <constraint firstAttribute="trailing" secondItem="KUo-zZ-Krj" secondAttribute="trailing" id="jZJ-ru-Css"/>
                             <constraint firstItem="cyk-aE-xyX" firstAttribute="leading" secondItem="QZE-C7-1wS" secondAttribute="leadingMargin" id="jfH-hf-GJY"/>
+                            <constraint firstItem="KUo-zZ-Krj" firstAttribute="leading" secondItem="QZE-C7-1wS" secondAttribute="leading" id="kDL-Ep-TyH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="m9k-Yp-oe8">
@@ -117,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wjW-wh-iIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="-48"/>
+            <point key="canvasLocation" x="882.60869565217399" y="-48.214285714285715"/>
         </scene>
         <!--Social View Controller-->
         <scene sceneID="7hq-zl-Gfj">
@@ -131,6 +141,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ScreenSocial" translatesAutoresizingMaskIntoConstraints="NO" id="Q1J-XV-4zy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1v-dw-YDL" userLabel="SCRL">
                                 <rect key="frame" x="20" y="88" width="374" height="774"/>
                                 <subviews>
@@ -231,8 +244,12 @@
                         <constraints>
                             <constraint firstItem="d1v-dw-YDL" firstAttribute="leading" secondItem="9eM-ob-Et3" secondAttribute="leadingMargin" id="1a5-df-C6J"/>
                             <constraint firstAttribute="trailingMargin" secondItem="d1v-dw-YDL" secondAttribute="trailing" id="1eA-kO-nvg"/>
+                            <constraint firstItem="Q1J-XV-4zy" firstAttribute="leading" secondItem="9eM-ob-Et3" secondAttribute="leading" id="3r7-c5-JdX"/>
+                            <constraint firstItem="Sl5-y4-5Iz" firstAttribute="top" secondItem="Q1J-XV-4zy" secondAttribute="bottom" id="NXG-Y1-Yhn"/>
                             <constraint firstItem="d1v-dw-YDL" firstAttribute="top" secondItem="elo-W7-bFw" secondAttribute="bottom" id="Q2O-zK-7wY"/>
                             <constraint firstItem="Sl5-y4-5Iz" firstAttribute="top" secondItem="d1v-dw-YDL" secondAttribute="bottom" id="j62-6F-XPd"/>
+                            <constraint firstAttribute="trailing" secondItem="Q1J-XV-4zy" secondAttribute="trailing" id="yKo-fw-cQW"/>
+                            <constraint firstItem="Q1J-XV-4zy" firstAttribute="top" secondItem="9eM-ob-Et3" secondAttribute="top" id="zTc-Sk-HsQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -252,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bnc-im-pEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1746" y="-48"/>
+            <point key="canvasLocation" x="1744.9275362318842" y="-48.214285714285715"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="Pf7-6E-pcV">
@@ -266,12 +283,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScreenSocial" translatesAutoresizingMaskIntoConstraints="NO" id="Cv1-c6-tA0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NjW-xW-s3B">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="84" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="RJt-Nm-Vah">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="741"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" rowHeight="84" id="AW9-uv-NLA" customClass="HistoryTableViewCell" customModule="SocialMood" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="55.5" width="414" height="84"/>
@@ -330,7 +350,9 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
                                                     <outlet property="dateLabel" destination="IwP-y5-Czc" id="M08-Jk-Tmf"/>
                                                     <outlet property="emojiImageView" destination="lkh-9Y-NxC" id="grj-Sk-o5b"/>
@@ -358,6 +380,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="c5k-Ug-I8y" firstAttribute="height" secondItem="RJt-Nm-Vah" secondAttribute="height" multiplier="0.15" id="xEo-ld-sg6"/>
                                 </constraints>
@@ -366,8 +389,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NjW-xW-s3B" firstAttribute="top" secondItem="bWH-Zm-6bV" secondAttribute="bottom" id="2Rf-zB-qzi"/>
+                            <constraint firstAttribute="bottom" secondItem="Cv1-c6-tA0" secondAttribute="bottom" id="2Yc-ja-coL"/>
+                            <constraint firstAttribute="trailing" secondItem="Cv1-c6-tA0" secondAttribute="trailing" id="5vz-OH-PXJ"/>
+                            <constraint firstAttribute="bottom" secondItem="Cv1-c6-tA0" secondAttribute="bottom" id="AfX-aa-i1g"/>
+                            <constraint firstItem="Cv1-c6-tA0" firstAttribute="leading" secondItem="uk4-N9-f6W" secondAttribute="leading" id="UW2-5k-cc4"/>
                             <constraint firstAttribute="trailing" secondItem="NjW-xW-s3B" secondAttribute="trailing" id="V2P-I7-ml6"/>
                             <constraint firstItem="NjW-xW-s3B" firstAttribute="leading" secondItem="uk4-N9-f6W" secondAttribute="leading" id="Xcv-B6-dCK"/>
+                            <constraint firstItem="Cv1-c6-tA0" firstAttribute="top" secondItem="uk4-N9-f6W" secondAttribute="top" id="age-gQ-RYo"/>
                             <constraint firstAttribute="bottom" secondItem="NjW-xW-s3B" secondAttribute="bottom" id="rMg-6o-aBI"/>
                         </constraints>
                     </view>
@@ -442,11 +470,12 @@
         <image name="Middle" width="76" height="76"/>
         <image name="SCOFF" width="76" height="76"/>
         <image name="Sad" width="76" height="76"/>
+        <image name="ScreenSocial" width="375" height="812"/>
         <image name="TTOFF" width="76" height="76"/>
         <image name="WAOFF" width="76" height="76"/>
         <image name="YTOFF" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tb4-K5-dmx"/>
+        <segue reference="yq3-IL-awz"/>
     </inferredMetricsTieBreakers>
 </document>
