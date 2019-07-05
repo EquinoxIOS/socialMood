@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import CoreGraphics
 
 class SocialViewController: UIViewController,UITextFieldDelegate {
     var recievedEmoji: Mood!
     var moods: [Mood] = []
     
     @IBOutlet weak var doneBTN: UIBarButtonItem!
-
+    @IBOutlet weak var SCRL: UIScrollView!
+    
     
     @IBOutlet weak var FB: UIButton!
     @IBOutlet weak var INST: UIButton!
@@ -26,7 +28,11 @@ class SocialViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var imageRecieved: UIImageView!
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-//    SCRL.setContentOffset(CGPointMake(0,250), animated: true)
+        
+        let point = textFieldNote.frame.origin
+        SCRL.contentOffset = point
+        
+        SCRL.setContentOffset(CGPoint(x: 0,y: 300), animated: true)
     }
     
     @IBAction func pressedDone(_ sender: Any) {
@@ -57,7 +63,12 @@ class SocialViewController: UIViewController,UITextFieldDelegate {
     
     
     
+    
+    
+    
     override func viewDidLoad() {
+        
+        textFieldNote.delegate = self
         super.viewDidLoad()
         initButtns()
         addMessage()
