@@ -8,13 +8,14 @@
 
 import UIKit
 import CoreGraphics
+import NotificationCenter
 
-class SocialViewController: UIViewController,UITextFieldDelegate {
+class SocialViewController: UIViewController {
     var recievedEmoji: Mood!
     var moods: [Mood] = []
     
     @IBOutlet weak var doneBTN: UIBarButtonItem!
-    @IBOutlet weak var SCRL: UIScrollView!
+   // @IBOutlet weak var SCRL: UIScrollView!
     
     
     @IBOutlet weak var FB: UIButton!
@@ -27,13 +28,13 @@ class SocialViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var imageRecieved: UIImageView!
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        
-        let point = textFieldNote.frame.origin
-        SCRL.contentOffset = point
-        
-        SCRL.setContentOffset(CGPoint(x: 0,y: 300), animated: true)
-    }
+//    func textFieldDidBeginEditing(_ textField: UITextField) {
+//        
+//        let point = textFieldNote.frame.origin
+//        SCRL.contentOffset = point
+//        
+//        SCRL.setContentOffset(CGPoint(x: 0,y: 300), animated: true)
+//    }
     
     @IBAction func pressedDone(_ sender: Any) {
         if FB.isSelected{
@@ -61,14 +62,28 @@ class SocialViewController: UIViewController,UITextFieldDelegate {
         createMood()
     }
     
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
     
-    
-    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
     
     
     override func viewDidLoad() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+
+        self.hideKeyboardWhenTappedAround()
+
         
-        textFieldNote.delegate = self
         super.viewDidLoad()
         initButtns()
         addMessage()
@@ -228,5 +243,17 @@ class SocialViewController: UIViewController,UITextFieldDelegate {
         } catch {
             print("Error serializing JSON :", error)
         }
+    }
+}
+
+extension SocialViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SocialViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

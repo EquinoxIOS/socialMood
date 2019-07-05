@@ -103,7 +103,7 @@ class EmojiViewController: UIViewController {
     func animateAppName() {
         animatingLabel.text = ""
         
-        let appName = "How are you?"
+        let appName = "What's up!"
         
         // New code using Timer class
         
