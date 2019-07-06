@@ -14,6 +14,8 @@ class HistoryViewController: UIViewController {
     var moods: [Mood] = []
     var groupedMood: [(key: String, value: [Mood])] = []
     
+    @IBOutlet weak var addMoodButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +23,9 @@ class HistoryViewController: UIViewController {
             $0.date > $1.date
         }
 
+        
+        addMoodButton.setImage(#imageLiteral(resourceName: "AddBlackCircle"), for: .normal)
+        
         groupedMood = Dictionary(grouping: moods){ (mood) -> String in
             return mood.date.dayString!
             }.sorted { $0.0 > $1.0 }

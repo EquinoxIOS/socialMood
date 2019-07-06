@@ -494,9 +494,9 @@ class AutoEmojiViewController: UIViewController, AVCaptureVideoDataOutputSampleB
                 else {
                     print("Neutral")
                     
-                    objectToSend = Mood(emojiSelected: "Middle", note: "", socialSelected: [])
+                    objectToSend = Mood(emojiSelected: "Neutral", note: "", socialSelected: [])
                     
-                     em.setImage(#imageLiteral(resourceName: "Middle@5x.png"), for: .normal)
+                     em.setImage(#imageLiteral(resourceName: "Neutral@5x"), for: .normal)
                     
                 }
                 

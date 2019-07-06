@@ -50,9 +50,9 @@
                                                     <action selector="nextTapped:" destination="bPu-BX-fQM" eventType="touchUpInside" id="wcL-7e-LQV"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDo-wM-2ec">
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDo-wM-2ec">
                                                 <rect key="frame" x="165.5" y="0.0" width="83" height="489"/>
-                                                <state key="normal" image="Middle"/>
+                                                <state key="normal" image="Neutral"/>
                                                 <connections>
                                                     <action selector="nextTapped:" destination="bPu-BX-fQM" eventType="touchUpInside" id="d0b-dm-OXn"/>
                                                 </connections>
@@ -143,20 +143,20 @@
                                 </connections>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="bgt-1H-TAr">
-                                <rect key="frame" x="0.0" y="137" width="414" height="622"/>
+                                <rect key="frame" x="0.0" y="137" width="414" height="624.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v68-yQ-WlN">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="266"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="267.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OJ2-ZF-PFN">
-                                        <rect key="frame" x="0.0" y="298" width="414" height="38"/>
+                                        <rect key="frame" x="0.0" y="299.5" width="414" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xJM-DX-USj">
-                                        <rect key="frame" x="0.0" y="368" width="414" height="76"/>
+                                        <rect key="frame" x="0.0" y="369.5" width="414" height="76.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LV-Or-SKe">
                                                 <rect key="frame" x="0.0" y="0.0" width="138" height="76"/>
@@ -182,24 +182,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0wX-eb-LkT">
-                                        <rect key="frame" x="0.0" y="476" width="414" height="76"/>
+                                        <rect key="frame" x="0.0" y="478" width="414" height="76.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0c-Ex-ctN">
-                                                <rect key="frame" x="0.0" y="0.0" width="138" height="76"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="76.5"/>
                                                 <state key="normal" image="WAOFF"/>
                                                 <connections>
                                                     <action selector="appBtnPressed:" destination="8DB-k6-xzD" eventType="touchUpInside" id="NZk-iu-q4W"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72u-EV-kVL">
-                                                <rect key="frame" x="138" y="0.0" width="138" height="76"/>
+                                                <rect key="frame" x="138" y="0.0" width="138" height="76.5"/>
                                                 <state key="normal" image="YTOFF"/>
                                                 <connections>
                                                     <action selector="appBtnPressed:" destination="8DB-k6-xzD" eventType="touchUpInside" id="ZNT-Me-Zam"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzt-GP-7TP">
-                                                <rect key="frame" x="276" y="0.0" width="138" height="76"/>
+                                                <rect key="frame" x="276" y="0.0" width="138" height="76.5"/>
                                                 <state key="normal" image="SCOFF"/>
                                                 <connections>
                                                     <action selector="appBtnPressed:" destination="8DB-k6-xzD" eventType="touchUpInside" id="WmR-6e-1x6"/>
@@ -208,7 +208,7 @@
                                         </subviews>
                                     </stackView>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Got something to say?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jzB-OV-GOc">
-                                        <rect key="frame" x="0.0" y="584" width="414" height="38"/>
+                                        <rect key="frame" x="0.0" y="586.5" width="414" height="38"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
@@ -355,8 +355,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5k-Ug-I8y">
                                         <rect key="frame" x="0.0" y="741" width="414" height="111"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Add Update"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Add Mood"/>
                                         <connections>
                                             <segue destination="25g-8v-Tkw" kind="show" id="7Kv-3h-l4M"/>
                                         </connections>
@@ -385,6 +385,9 @@
                             <constraint firstAttribute="bottom" secondItem="NjW-xW-s3B" secondAttribute="bottom" id="rMg-6o-aBI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addMoodButton" destination="c5k-Ug-I8y" id="wQ7-md-sJ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FH5-rb-nWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -426,7 +429,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKR-X9-DCh">
                                 <rect key="frame" x="20" y="88" width="374" height="774"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="Load"/>
                                 <connections>
                                     <action selector="emojiSelected:" destination="IFe-EY-sjo" eventType="touchUpInside" id="FCB-tA-81b"/>
                                 </connections>
@@ -461,7 +464,8 @@
         <image name="FBOFF" width="76" height="76"/>
         <image name="Happy" width="76" height="76"/>
         <image name="IGOFF" width="76" height="76"/>
-        <image name="Middle" width="76" height="76"/>
+        <image name="Load" width="50" height="50"/>
+        <image name="Neutral" width="76" height="76"/>
         <image name="SCOFF" width="76" height="76"/>
         <image name="Sad" width="76" height="76"/>
         <image name="ScreenSocial" width="375" height="812"/>
@@ -470,6 +474,6 @@
         <image name="YTOFF" width="76" height="76"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yq3-IL-awz"/>
+        <segue reference="Tb4-K5-dmx"/>
     </inferredMetricsTieBreakers>
 </document>

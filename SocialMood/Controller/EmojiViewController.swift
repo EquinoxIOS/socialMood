@@ -72,7 +72,7 @@ class EmojiViewController: UIViewController {
             objectToSend = Mood(emojiSelected: "Sad", note: "", socialSelected: [])
         case neutral:
             //emojiSelected = Emoji(name: "Middle", assetName: "Middle")
-            objectToSend = Mood(emojiSelected: "Middle", note: "", socialSelected: [])
+            objectToSend = Mood(emojiSelected: "Neutral", note: "", socialSelected: [])
         case happier:
             //emojiSelected = Emoji(name: "Cool", assetName: "Cool")
             objectToSend = Mood(emojiSelected: "Cool", note: "", socialSelected: [])
