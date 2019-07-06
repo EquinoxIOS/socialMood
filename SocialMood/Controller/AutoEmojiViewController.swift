@@ -379,45 +379,7 @@ class AutoEmojiViewController: UIViewController, AVCaptureVideoDataOutputSampleB
         // Perform landmark detection on tracked faces.
         for trackingRequest in newTrackingRequests {
             
-            
-            if let outerLips9 = outerLips9, let innerLips5 = innerLips5, let outerLips5 = outerLips5, let outerLips3 = outerLips3, let innerLips3 = innerLips3, let innerLips0 = innerLips0, let innerLips1 = innerLips1, let innerLips4 = innerLips4 {
-                
-                
-                
-                
-                
-                
-                if (outerLips9.y > innerLips5.y || outerLips5.y > innerLips3.y)
-                {  if  (innerLips1.y > innerLips4.y + 0.1) && (innerLips0.y > innerLips5.y + 0.1) {
-                    print("Hilarious")
-                    
-                  
-                    
-                } else {
-                    print("Happy")
-                    emojiButton.setImage(#imageLiteral(resourceName: "Cool"), for: .normal)
-                    
-                    } }
-                else if (outerLips9.y + 0.015 < innerLips5.y && outerLips5.y + 0.015 < innerLips3.y  ) {
-                    print("Sad")
-                    emojiButton.setImage(#imageLiteral(resourceName: "Sad"), for: .normal)
-                }
-                    
-                else {
-                    print("Neutral")
-                    emojiButton.setImage(#imageLiteral(resourceName: "Middle"), for: .normal)
-                }
-                
-                
-                
-                //                print(innerLips1.y, innerLips4.y )
-                
-                
-                
-                
-                
-                
-            }
+           
             
             let faceLandmarksRequest = VNDetectFaceLandmarksRequest(completionHandler: { (request, error) in
                 
@@ -501,7 +463,7 @@ class AutoEmojiViewController: UIViewController, AVCaptureVideoDataOutputSampleB
             
             if let outerLips9 = self.outerLips9, let innerLips5 = self.innerLips5, let outerLips5 = self.outerLips5, let outerLips3 = self.outerLips3, let innerLips3 = self.innerLips3, let innerLips0 = self.innerLips0, let innerLips1 = self.innerLips1, let innerLips4 = self.innerLips4 {
                 
-                if (outerLips9.y > innerLips5.y || outerLips5.y > innerLips3.y)
+                if (outerLips9.y > innerLips5.y && outerLips5.y > innerLips3.y)
                 {  if  (innerLips1.y > innerLips4.y + 0.1) && (innerLips0.y > innerLips5.y + 0.1) {
                     print("Hilarious")
                     
@@ -516,7 +478,7 @@ class AutoEmojiViewController: UIViewController, AVCaptureVideoDataOutputSampleB
                     print("Happy")
                     
                   objectToSend = Mood(emojiSelected: "Cool", note: "", socialSelected: [])
-                    em.setImage(#imageLiteral(resourceName: "Happy@5x.png"), for: .normal)
+                    em.setImage(UIImage(named: "Cool@5x"), for: .normal)
                     
                     } }
                 else if (outerLips9.y + 0.015 < innerLips5.y && outerLips5.y + 0.015 < innerLips3.y  ) {
